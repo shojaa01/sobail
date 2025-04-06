@@ -348,10 +348,11 @@
     justify-content: center;
     width: 80%;
     height: 180px;
-    background-color: #377510;
+    background-color: #37751000;
     border-radius: 5px;
     margin: 3vh;
     border-radius: 1vh 0vh 1vh 1vh;
+    box-shadow: 0 0 15px 5px #63ff97 ,inset 0 0 55px 5px #63ff97;
   }
   
   .MinBoxe H2 {
