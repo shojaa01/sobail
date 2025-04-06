@@ -156,7 +156,7 @@
 
   .Header {
     width: 100%;
-    height: 400px;
+    height: 200px;
     background-color: black;
     position: relative;
     display: flex;
@@ -165,15 +165,16 @@
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-bottom: 5vh;
   }
-
+  
   .Header-background {
     position: absolute;
     width: 100%;
     height: 100%;
     background-size: cover;
   }
-
+  
   .Header-backgroundCover {
     position: relative;
     display: flex;
@@ -184,48 +185,48 @@
     background-color: #27391c80;
     box-shadow: 0 1vh 2vh 0.01vh #255F38;
   }
-
+  
   .Header-ImagesHead {
     position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 25vh;
+    width: 100px;
+    height: 100px;
+    border-radius: 100vh;
     background-size: cover;
     top: 2vh;
     left: 2vh;
     box-shadow: 0 0 10vh 1vh #1F7D53;
   }
-
+  
   .Header-H1P1H1Head {
     position: absolute;
-    top: 10%;
-    right: 20%;
+    top: 50px;
+    right: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 5rem;
-    color: #F4F9F4;
+    font-size: 2rem;
+    color: #000000;
     text-shadow: 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89;
   }
-
+  
   .Header-H1Head {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5rem;
-    color: #F4F9F4;
+    font-size: 2rem;
+    color: #ffffff;
     text-shadow: 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89;
   }
-
+  
   .Header-P1Head {
     position: absolute;
-    bottom: 7rem;
-    left: 7rem;
+    bottom: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #F4F9F4;
     text-shadow: 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89;
   }
+  
 
 }
 
@@ -322,6 +323,20 @@
 
 
 @media (max-width:900px) {
+  .ImagesBoxSize {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    border-radius: 5px;
+    padding: -2vh;
+    background-color: #ffffff00;
+    top: -40px;
+    right: -40px;
+    /* border-bottom-left-radius: 25px; */
+    /* border: 0.2vh solid #20605800; */
+    /* box-shadow: 0 0 15px 5px #255F38; */
+  }
   .MinBoxe {
     position: relative;
     display: flex;
@@ -340,9 +355,9 @@
     /* text-shadow: 0 0 0.5em #255F38, 0 0 00.5em #255F38, 0 0 0.5em #255F38; */
     color: rgb(255, 255, 255);
     position: absolute;
-    font-size: 4rem;
+    font-size: 2rem;
     top: 10px;
-    right: 140px;
+    right: 70px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
@@ -350,9 +365,9 @@
     /* text-shadow: 0 0 0.5em #255F38, 0 0 00.5em #255F38, 0 0 0.5em #255F38; */
     color: rgb(255, 255, 255);
     position: absolute;
-    font-size: 4rem;
+    font-size: 3rem;
     top: 70px;
-    right: 55%;
+    right: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
@@ -413,3 +428,42 @@
   margin: 4rem;
 }
 
+@media (max-width:900px) {
+  .TextBoxSIndex{
+    position: relative;
+    display:flex ;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    /* margin: 5%;
+    padding: 5%; */
+    /* background-color: #f1f1f1; */
+    color: white;
+  }
+  .TitelTextBox{
+    position: relative;
+    display:flex ;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 3rem;
+    margin: 2rem;
+  }
+  .TextBoxTiter{
+    position: relative;
+    display:flex ;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    margin: 4rem;
+  }
+}
