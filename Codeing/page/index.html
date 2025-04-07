@@ -2,6 +2,8 @@
 <html lang="en">
 
 <link rel="stylesheet" href="Home.css">
+<link rel="icon" href="imgs/icon512.png" type="image/png" sizes="16x16">
+<link rel="manifest" href="manifest.json">
 
 <head>
     <meta charset="UTF-8">
@@ -9,49 +11,53 @@
     <title>Sobali</title>
 </head>
 <style>
-    .Loding{
-  position: fixed;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: #01591e;
-  z-index: 999;
-}
-.AnimLod{
-  position: relative;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 0.2em solid white;
-  border-left: 0px;
-  border-bottom: 0px;
-  animation-name: AnimLod;
-  animation-iteration-count: infinite;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-}
-@keyframes  AnimLod{
-  0%{
-    rotate: 0deg;
-  }
-  100%{
-    rotate: 360deg;
-  }
-}
+    .Loding {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: #01591e;
+        z-index: 999;
+    }
+
+    .AnimLod {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 0.2em solid white;
+        border-left: 0px;
+        border-bottom: 0px;
+        animation-name: AnimLod;
+        animation-iteration-count: infinite;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+    }
+
+    @keyframes AnimLod {
+        0% {
+            rotate: 0deg;
+        }
+
+        100% {
+            rotate: 360deg;
+        }
+    }
 </style>
 <script>
-    window.addEventListener('load' , FunckLoding = () =>{
-    document.getElementById('Loding').style.display='none';
-})
+    window.addEventListener('load', FunckLoding = () => {
+        document.getElementById('Loding').style.display = 'none';
+    })
 </script>
 <div class="Loding" id="Loding">
     <div class="AnimLod">
 
     </div>
 </div>
+
 <body>
 
     <div class="Home">
@@ -59,7 +65,7 @@
         <div class="Header">
             <div class="Header-background" style="background-image: url(blogpics01.png);">
                 <div class="Header-backgroundCover">
-                    <a target="_blank"  href="./Management/Management.html" class="Header-ImagesHead"
+                    <a target="_blank" href="./Management/Management.html" class="Header-ImagesHead"
                         style="background-image: url(173859614367a0df2f89a96.jpg);"></a>
                     <div class="Header-H1P1H1Head">سوبالی</div>
                     <div class="Header-H1Head">کافه رستوران</div>
@@ -69,7 +75,7 @@
         </div>
         <div class="Neon-box">
             <div class="Neon-">
-                
+
             </div>
             <div class="Neon">
 
@@ -100,23 +106,77 @@
                 <h3>شما</h3>
                 <p>موزیک خودت رو درخواست بده</p>
             </a>
+        </div>
+        <div class="boxbtntwo">
+            <div class="FullScreen" id="FullScreen">
+                <div class="FullScreenImage"></div>
             </div>
+            <div class="AddedScreen">
+                <div class="AddedScreenImage"></div>
+            </div>
+        </div>
 
-            <div class="TextBoxSIndex">
-                <div class="TitelTextBox">
-                    سوبالی
-                </div>
-                <div class="TextBoxTiter">
-                    به دنیای خوشمزه‌ی کافه‌رستوران ما خوش اومدی!<br/>
-                    اینجا یه جای دنج و دو طبقه‌ست، مخصوص وقت‌گذرونی دانشجویی؛ چه بخوای یه قهوه‌ی داغ بزنی، چه با یه غذای خوشمزه روزتو بسازی.<br/>
-                    منوی کامل کافه و رستوران رو همینجا می‌تونی ببینی، غذاها رو لایک کنی، نظر بذاری، حتی موزیک پیشنهادی خودتو پلی کنی و حال همه رو خوب کنی<br/>
-                    ما رو راحت از روی نقشه پیدا می‌کنی، فقط یه کلیک تا یه دورهمی خوب فاصله داری.<br/>
-                    اگه دنبال یه فضای صمیمی، خوراکی‌های خوشمزه، موزیک خوب و حس آرامش وسط شلوغی‌های دانشجویی هستی، اینجا دقیقاً همون‌جاست.<br/>
-                    منتظرتیم
-                </div>
+        <div class="TextBoxSIndex">
+            <div class="TitelTextBox">
+                سوبالی
             </div>
+            <div class="TextBoxTiter">
+                به دنیای خوشمزه‌ی کافه‌رستوران ما خوش اومدی!<br />
+                اینجا یه جای دنج و دو طبقه‌ست، مخصوص وقت‌گذرونی دانشجویی؛ چه بخوای یه قهوه‌ی داغ بزنی، چه با یه غذای
+                خوشمزه روزتو بسازی.<br />
+                منوی کامل کافه و رستوران رو همینجا می‌تونی ببینی، غذاها رو لایک کنی، نظر بذاری، حتی موزیک پیشنهادی خودتو
+                پلی کنی و حال همه رو خوب کنی<br />
+                ما رو راحت از روی نقشه پیدا می‌کنی، فقط یه کلیک تا یه دورهمی خوب فاصله داری.<br />
+                اگه دنبال یه فضای صمیمی، خوراکی‌های خوشمزه، موزیک خوب و حس آرامش وسط شلوغی‌های دانشجویی هستی، اینجا
+                دقیقاً همون‌جاست.<br />
+                منتظرتیم
+            </div>
+        </div>
 
 
 </body>
-<script src="./script.js"></script>
+<script type="text/javascript" src="./script.js">
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('sw.js').then(function (registration) {
+                // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function (err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+
+    let deferredPrompt;
+    var div = document.querySelector('.AddedScreen');
+    var button = document.querySelector('.AddedScreenImage');
+    div.style.display = 'none';
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+        // Prevent Chrome 67 and earlier from automatically showing the prompt
+        e.preventDefault();
+        // Stash the event so it can be triggered later.
+        deferredPrompt = e;
+        div.style.display = 'block';
+
+        button.addEventListener('click', (e) => {
+            // hide our user interface that shows our A2HS button
+            div.style.display = 'none';
+            // Show the prompt
+            deferredPrompt.prompt();
+            // Wait for the user to respond to the prompt
+            deferredPrompt.userChoice
+                .then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted the A2HS prompt');
+                    } else {
+                        console.log('User dismissed the A2HS prompt');
+                    }
+                    deferredPrompt = null;
+                });
+        });
+    });
+</script>
+
 </html>

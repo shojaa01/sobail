@@ -1,0 +1,20 @@
+{
+    "short_name": "Sobali",
+    "name": "Web Sobail",
+    "icons": [
+      {
+        "src": "173859614367a0df2f89a96.jpg",
+        "type": "image/jpg",
+        "sizes": "300x300"
+      },
+      {
+        "src": "173859614367a0df2f89a96.jpg",
+        "type": "image/jpg",
+        "sizes": "300x300"
+      }
+    ],
+    "start_url": "https://htmlpreview.github.io/?https://raw.githubusercontent.com/shojaa01/sobail/refs/heads/main/Codeing/page/index.html",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "theme_color": "#3367D6"
+  }
