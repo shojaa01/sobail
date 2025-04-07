@@ -7,44 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MenuRestaurant</title>
 </head>
+<div class="Loding" id="Loding">
+    <div class="AnimLod">
+
+    </div>
+</div>
 <style>
-    .Loding{
-  position: fixed;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: #01591e;
-  z-index: 999;
-}
-.AnimLod{
-  position: relative;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 0.2em solid white;
-  border-left: 0px;
-  border-bottom: 0px;
-  animation-name: AnimLod;
-  animation-iteration-count: infinite;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-}
-@keyframes  AnimLod{
-  0%{
-    rotate: 0deg;
-  }
-  100%{
-    rotate: 360deg;
-  }
-}
+    .Loding {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: #01591e;
+        z-index: 999;
+    }
+
+    .AnimLod {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 0.2em solid white;
+        border-left: 0px;
+        border-bottom: 0px;
+        animation-name: AnimLod;
+        animation-iteration-count: infinite;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+    }
+
+    @keyframes AnimLod {
+        0% {
+            rotate: 0deg;
+        }
+
+        100% {
+            rotate: 360deg;
+        }
+    }
 </style>
 <script>
-    window.addEventListener('load' , FunckLoding = () =>{
-    document.getElementById('Loding').style.display='none';
-})
+    window.addEventListener('load', FunckLoding = () => {
+        document.getElementById('Loding').style.display = 'none';
+    })
 </script>
 <header class="header">
     <ul class="Menu-Product-ul">
@@ -60,7 +68,7 @@
 <body>
     <div class="cantiner">
         <!--  -->
-        <div class="Menu-Product-category" id="section1" >
+        <div class="Menu-Product-category" id="section1">
             <div class="Menu-line-Product-category">
                 ___________________
             </div>
@@ -93,7 +101,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <a class="Menu-Comment-box" href="Comment/Comment.html">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         25
@@ -133,7 +141,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -173,7 +181,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -213,7 +221,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -261,7 +269,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -303,7 +311,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -343,7 +351,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -384,7 +392,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -432,7 +440,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -474,7 +482,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -514,7 +522,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -555,7 +563,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -603,7 +611,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -645,7 +653,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -685,7 +693,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -726,7 +734,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -774,7 +782,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -816,7 +824,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -856,7 +864,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -897,7 +905,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -945,7 +953,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -987,7 +995,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -1027,7 +1035,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -1068,7 +1076,7 @@
             <div class="Menu-Like-And-Comment-box">
                 <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
-                        <div class="Menu-Comment-image" ></div>
+                        <div class="Menu-Comment-image"></div>
                     </div>
                     <div class="Menu-Number-Comment-box">
                         22
@@ -1089,4 +1097,5 @@
     </div>
 </body>
 <script src="./script.js"></script>
+
 </html>
