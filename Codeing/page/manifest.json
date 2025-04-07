@@ -3,13 +3,13 @@
     "name": "Web Sobail",
     "icons": [
       {
-        "src": "sobail192.jpg",
-        "type": "image/jpg",
+        "src": "sobail192.png",
+        "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "sobail512.jpg",
-        "type": "image/jpg",
+        "src": "sobail512.png",
+        "type": "image/png",
         "sizes": "512x512"
       }
     ],
