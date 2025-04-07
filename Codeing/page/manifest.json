@@ -3,14 +3,14 @@
     "name": "Web Sobail",
     "icons": [
       {
-        "src": "173859614367a0df2f89a96.jpg",
+        "src": "sobail192.jpg",
         "type": "image/jpg",
-        "sizes": "300x300"
+        "sizes": "192x192"
       },
       {
-        "src": "173859614367a0df2f89a96.jpg",
+        "src": "sobail512.jpg",
         "type": "image/jpg",
-        "sizes": "300x300"
+        "sizes": "512x512"
       }
     ],
     "start_url": "https://htmlpreview.github.io/?https://raw.githubusercontent.com/shojaa01/sobail/refs/heads/main/Codeing/page/index.html",
