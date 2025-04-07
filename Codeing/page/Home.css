@@ -1,7 +1,13 @@
+/* ------------------------------------------------------ */
+@font-face {
+  font-family: vazir;
+  src: url(iranyekanweblightfanum.woff) format("woff");
+}
+
 * {
   margin: 0;
   padding: 0;
-
+  font-family: vazir;
 }
 
 /* ------------------------------------------------------ */
@@ -127,7 +133,6 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 5rem;
   color: #F4F9F4;
   text-shadow: 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89;
@@ -138,7 +143,6 @@
   top: 90px;
   right: 20rem;
   font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 5rem;
   color: #F4F9F4;
   text-shadow: 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89;
@@ -148,7 +152,6 @@
   position: absolute;
   bottom: 7rem;
   left: 7rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 4rem;
   color: #F4F9F4;
   text-shadow: 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89;
@@ -171,14 +174,14 @@
     flex-direction: column;
     margin-bottom: 5vh;
   }
-  
+
   .Header-background {
     position: absolute;
     width: 100%;
     height: 100%;
     background-size: cover;
   }
-  
+
   .Header-backgroundCover {
     position: relative;
     display: flex;
@@ -190,7 +193,7 @@
     background-color: #27391c80;
     box-shadow: 0 1vh 2vh 0.01vh #255F38;
   }
-  
+
   .Header-ImagesHead {
     position: absolute;
     width: 100px;
@@ -201,45 +204,45 @@
     left: 2vh;
     box-shadow: 0 0 10vh 1vh #1F7D53;
   }
-  
+
   .Header-H1P1H1Head {
     position: absolute;
     top: 50px;
     right: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+
     font-size: 2rem;
     color: #ffffff;
     text-shadow: 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89;
   }
-  
+
   .Header-H1Head {
     position: absolute;
     top: 10px;
     right: 10px;
     font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
+
     font-size: 2rem;
     color: #ffffff;
     text-shadow: 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89;
   }
-  
+
   .Header-P1Head {
     position: absolute;
     width: 100%;
     bottom: 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
     font-size: 1rem;
     left: 0px;
     color: #F4F9F4;
     text-shadow: 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89;
   }
-  
+
 
 }
 
 /* ------------------------------------------------------------------------          Neon  */
 
-.Neon-box{
+.Neon-box {
   position: relative;
   display: flex;
   align-items: center;
@@ -247,12 +250,6 @@
   justify-content: space-evenly;
   width: 100%;
   height: 10px;
-}
-.Neon{
-
-}
-.Neon{
-
 }
 
 
@@ -267,7 +264,7 @@
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  
+
 }
 
 
@@ -281,7 +278,7 @@
   width: 35%;
   height: 600px;
   background-color: #27391C;
-  
+
   box-shadow: 0 0 15px 5px #255F38;
   border-radius: 5vh 0vh 5vh 5vh;
   margin: 5vh;
@@ -308,7 +305,6 @@
   font-size: 5rem;
   top: 120px;
   right: 10px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .MinBoxe H3 {
@@ -316,7 +312,6 @@
   font-size: 5rem;
   top: 100px;
   right: 120px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .MinBoxe P {
@@ -325,7 +320,6 @@
   font-weight: 800;
   bottom: 30px;
   margin: 1vh;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -344,6 +338,7 @@
     /* border: 0.2vh solid #20605800; */
     /* box-shadow: 0 0 15px 5px #255F38; */
   }
+
   .MinBoxe {
     position: relative;
     display: flex;
@@ -356,9 +351,9 @@
     border-radius: 5px;
     margin: 3vh;
     border-radius: 1vh 0vh 1vh 1vh;
-    box-shadow: 0 0 15px 5px #3cd672 ,inset 0 0 55px 5px #3d7b51;
+    box-shadow: 0 0 15px 5px #3cd672, inset 0 0 55px 5px #3d7b51;
   }
-  
+
   .MinBoxe H2 {
     /* text-shadow: 0 0 0.5em #255F38, 0 0 00.5em #255F38, 0 0 0.5em #255F38; */
     color: rgb(255, 255, 255);
@@ -366,9 +361,8 @@
     font-size: 2rem;
     top: 10px;
     right: 70px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
-  
+
   .MinBoxe H3 {
     /* text-shadow: 0 0 0.5em #255F38, 0 0 00.5em #255F38, 0 0 0.5em #255F38; */
     color: rgb(255, 255, 255);
@@ -376,9 +370,8 @@
     font-size: 3rem;
     top: 10px;
     left: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
-  
+
   .MinBoxe P {
     /* text-shadow: 0 0 0.5em #255F38, 0 0 00.5em #255F38, 0 0 0.5em #255F38; */
     color: rgb(255, 255, 255);
@@ -387,7 +380,6 @@
     font-weight: 800;
     bottom: 20px;
     margin: 1vh;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 }
 
@@ -398,9 +390,9 @@
 
 
 
-.TextBoxSIndex{
+.TextBoxSIndex {
   position: relative;
-  display:flex ;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
@@ -413,9 +405,10 @@
   /* background-color: #f1f1f1; */
   color: white;
 }
-.TitelTextBox{
+
+.TitelTextBox {
   position: relative;
-  display:flex ;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
@@ -424,9 +417,10 @@
   font-size: 4rem;
   margin: 2rem;
 }
-.TextBoxTiter{
+
+.TextBoxTiter {
   position: relative;
-  display:flex ;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
@@ -437,9 +431,9 @@
 }
 
 @media (max-width:900px) {
-  .TextBoxSIndex{
+  .TextBoxSIndex {
     position: relative;
-    display:flex ;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
@@ -452,9 +446,10 @@
     /* background-color: #f1f1f1; */
     color: white;
   }
-  .TitelTextBox{
+
+  .TitelTextBox {
     position: relative;
-    display:flex ;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
@@ -463,9 +458,10 @@
     font-size: 3rem;
     margin: 2rem;
   }
-  .TextBoxTiter{
+
+  .TextBoxTiter {
     position: relative;
-    display:flex ;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
