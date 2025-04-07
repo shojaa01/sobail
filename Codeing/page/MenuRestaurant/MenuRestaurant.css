@@ -198,7 +198,7 @@ html {
     font-size: 1.2em;
 }
 
-.Menu-Size-And-Price {}
+
 
 .Menu-Used-Items {
     display: none;
@@ -312,12 +312,12 @@ html {
 }
 
 .Menu-Comment-image {
-    width: 90%;
-    height: 80%;
+    width: 40px;
+    height: 40px;
     background-clip: content-box;
     background-position: center;
     background-size: cover;
-    background-image: url(../../Images/icons8-comment-100.png);
+    background-image: url(./commentWW.png);
 
 }
 
@@ -373,16 +373,16 @@ html {
 }
 
 .Menu-Like-image {
-    width: 90%;
-    height: 80%;
+    width: 40px;
+    height: 40px;
     background-clip: content-box;
     background-position: center;
     background-size: cover;
-    background-image: url(../../Images/icons8-filled-heart-96.png);
+    background-image: url(./likeWW.png);
     /* background-color: aliceblue; */
 }
 .RedMenuLikeImage{
-    background-image: url(../../Images/LikeRed.png);
+    background-image: url(./likeRR.png);
 }
 .Menu-Number-Like-box {
     position: absolute;
@@ -602,7 +602,7 @@ html {
         font-size: 1.5em;
     }
     
-    .Menu-Size-And-Price {}
+
     
     .Menu-Used-Items {
         display: none;
@@ -654,7 +654,7 @@ html {
         border-radius: 25px;
         border: 0.1em #ffffff solid;
         background-size: cover;
-        background-image: url(37086034811475300.png);
+ 
     }
     
     .Menu-Like-And-Comment-box {
@@ -716,12 +716,12 @@ html {
     }
     
     .Menu-Comment-image {
-        width: 90%;
-        height: 80%;
+        width: 50px;
+        height: 50px;
         background-clip: content-box;
         background-position: center;
         background-size: cover;
-        background-image: url(../../Images/icons8-comment-100.png);
+        background-image: url(./commentWW.png);
     
     }
     
@@ -777,16 +777,16 @@ html {
     }
     
     .Menu-Like-image {
-        width: 90%;
-        height: 80%;
+        width: 50px;
+        height: 50px;
         background-clip: content-box;
         background-position: center;
         background-size: cover;
-        background-image: url(icons8ike64.png);
+        background-image: url(./likeBB.png);
         /* background-color: aliceblue; */
     }
     .RedMenuLikeImage{
-        background-image: url(icons8ike64.png);
+        background-image: url(./likeRR.png);
     }
     .Menu-Number-Like-box {
         position: absolute;
