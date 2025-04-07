@@ -512,7 +512,7 @@ background-image: url(./FullScreenBB.png);
   display: flex;
   align-items: center;
   text-align: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
   width: 100px;
