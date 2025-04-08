@@ -11,9 +11,9 @@
     text-align: center;
     justify-content: space-between;
     width: 100%;
-    background-image: url(../../Images/77928381_SL-072622-51930-26.jpg);
     background-position: center;
     background-size: cover;
+    background-color: rgb(255, 255, 255);
 }
 
 .Management a {
@@ -29,7 +29,7 @@
     border: 0.2em solid rgb(0, 0, 0);
     margin: 3%;
     border-radius: 25px;
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: 800;
     color: black;
     text-decoration: none;
@@ -42,55 +42,154 @@
 
 .M1 {
     width: 100%;
-    height: 100px;
-
+    height: auto;
+    padding: 1em;
 
 }
 
 .M2 {
 
     width: 100%;
-    height: 200px;
-
+    height: auto;
+    padding: 1em;
 
 }
 
 .M3 {
 
-    width: 40%;
-    height: 400px;
-
+    width: 100%;
+    height: auto;
+    padding: 1em;
 
 }
 
 .M4 {
 
-    width: 40%;
-    height: 400px;
-
+    width: 100%;
+    height: auto;
+    padding: 1em;
 
 }
 
 .M5 {
 
     width: 100%;
-    height: 200px;
-
+    height: auto;
+    padding: 1em;
 
 }
 
 .M6 {
 
-    width: 40%;
-    height: 200px;
-
+    width: 100%;
+    height: auto;
+    padding: 1em;
 
 }
 
 .M7 {
 
-    width: 40%;
-    height: 200px;
+    width: 100%;
+    height: auto;
+    padding: 1em;
 
+}
 
+@media (min-width:900) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .Management {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .Management a {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: inset 0 0 15px 5px rgb(62, 62, 62) , 0 0 15px 5px rgb(80, 80, 80) ;
+        border: 0.2em solid rgb(0, 0, 0);
+        margin: 3%;
+        border-radius: 25px;
+        font-size: 3em;
+        font-weight: 800;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .Management a p{
+        margin: 0.5em;
+        font-size: 0.6em;
+    }
+    
+    .M1 {
+        width: 100%;
+        height: 100px;
+    
+    
+    }
+    
+    .M2 {
+    
+        width: 100%;
+        height: 200px;
+    
+    
+    }
+    
+    .M3 {
+    
+        width: 40%;
+        height: 400px;
+    
+    
+    }
+    
+    .M4 {
+    
+        width: 40%;
+        height: 400px;
+    
+    
+    }
+    
+    .M5 {
+    
+        width: 100%;
+        height: 200px;
+    
+    
+    }
+    
+    .M6 {
+    
+        width: 40%;
+        height: 200px;
+    
+    
+    }
+    
+    .M7 {
+    
+        width: 40%;
+        height: 200px;
+    
+    
+    }
 }
