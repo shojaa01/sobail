@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
 }
-
+html,
+body{
+    height: 100%;
+    background-color: rgb(39, 169, 27);
+}
 .Management {
     position: relative;
     display: flex;
@@ -13,7 +17,6 @@
     width: 100%;
     background-position: center;
     background-size: cover;
-    background-color: rgb(255, 255, 255);
 }
 
 .Management a {
@@ -24,14 +27,14 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: inset 0 0 15px 5px rgb(62, 62, 62)  ;
-    /* border: 0.2em solid rgb(0, 0, 0); */
+    background-color: rgba(238, 238, 238, 0.8);
+    box-shadow: inset 0 0 5px 2px rgb(255, 255, 255) , 0 0 10px 2px rgb(255, 255, 255) ;
+    /* border: 0.1em solid rgb(0, 0, 0); */
     margin: 3%;
     border-radius: 25px;
     font-size: 1.5em;
     font-weight: 800;
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
