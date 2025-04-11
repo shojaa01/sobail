@@ -43,9 +43,22 @@ body{
 
 .UserNameComment{
     position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.2em;
 }
 
-.TitelComment{}
+.TitelComment{
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
 
 .BtnAdd{
     position: fixed;
@@ -60,6 +73,7 @@ body{
     bottom: 10px;
     right: 10px;
     background-image: url(AddWW.png);
+    background-color: black;
 }
 .BtnAdd a {
     position: relative;
