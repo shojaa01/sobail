@@ -526,6 +526,8 @@ background-image: url(./FullScreenBB.png);
   height: 70px;
   background-size: cover;
   background-position: center;
+  background-color: #ffffff;
   background-image: url(./AddHomeBB.png);
+  background-color: #ffffff;
 }
 
