@@ -519,7 +519,7 @@ background-image: url(./FullScreenBB.png);
   height: 100px;
   border-radius: 25px;
   margin: 3vh;
-  box-shadow: 0 0 15px 5px #3cd672, inset 0 0 5px 5px #5cdc85;
+  box-shadow: 0 0 15px 5px #d63c3c, inset 0 0 5px 5px #dc5c5c;
 }
 .AddedScreenImage{
   width: 60px;
