@@ -512,7 +512,7 @@ background-image: url(./FullScreenBB.png);
   display: flex;
   align-items: center;
   text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   flex-direction: row;
   width: 100px;
@@ -522,10 +522,10 @@ background-image: url(./FullScreenBB.png);
   box-shadow: 0 0 15px 5px #3cd672, inset 0 0 5px 5px #5cdc85;
 }
 .AddedScreenImage{
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   background-size: cover;
   background-position: center;
-  background-image: url(./AddHomeBB.png);
+  background-image: url(./FullScreenBB.png);
 }
 
