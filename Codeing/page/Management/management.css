@@ -6,7 +6,7 @@
 html,
 body{
     height: 100%;
-    background-color: rgb(20, 32, 44);
+    background-color: rgb(1, 13, 24);
 }
 .continer{
     position: relative;
@@ -27,7 +27,7 @@ body{
     border: 5px solid transparent;
     transition: all 0.5s ease-in-out;
     animation-timing-function: 0;
-    border-image: linear-gradient(90deg, #6f0077, transparent) 1;
+    border-image: linear-gradient(90deg, #4b0250, transparent) 1;
     animation: alternate, move-border 5s linear infinite;
     margin-top: 2em;
 
@@ -44,6 +44,21 @@ body{
         color: white;
         font-weight: 900;
         font-size: 1.2em;
+    }
+    .VC{
+        position: relative;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        border: 5px solid transparent;
+        transition: all 0.5s ease-in-out;
+        animation-timing-function: 0;
+        border-image: linear-gradient(90deg, #4b0250, transparent) 1;
+        animation: alternate, move-border 5s linear infinite;
+        margin-top: 2em;
+    
     }
 }
 
@@ -111,8 +126,8 @@ body{
 
 @keyframes move-border {
     0% { border-image-source: linear-gradient(90deg, #ff00ff, transparent); }
-    25% { border-image-source: linear-gradient(180deg, #ff00ff, transparent); }
-    50% { border-image-source: linear-gradient(270deg, #ff00ff, transparent); }
-    75% { border-image-source: linear-gradient(360deg, #ff00ff, transparent); }
+    25% { border-image-source: linear-gradient(180deg, #6f00ff, transparent); }
+    50% { border-image-source: linear-gradient(270deg, #09006e, transparent); }
+    75% { border-image-source: linear-gradient(360deg, #5f015f, transparent); }
     100% { border-image-source: linear-gradient(90deg, #ff00ff, transparent); }
 }
