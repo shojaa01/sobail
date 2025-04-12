@@ -10,9 +10,6 @@
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-size: cover;
-    background-size: cover;
-    background-image: url(mapsobali.png);
 }
 .DackImage{
     position: relative;
@@ -25,8 +22,8 @@
     overflow-y: scroll;
     width: 100%;
     height: 100%;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,0.5) 0%, rgba(12,170,5,0.75) 50%, rgba(0,0,0,1) 100%);
+    background: #9DC08B;
+    background: linear-gradient(0deg, #9dc08b 0%, #9dc08b 50%, #40513b 100%);
 }
 .DivH1{
     position: relative;
@@ -39,7 +36,7 @@
     padding: 0em;
     font-size: 2.5em;
     font-weight: 1000;
-    text-shadow: 0 0 0.5em white , 0 0 0.5em white , 0 0 0.5em white;
+    text-shadow: 0 0 0.5em #609966 , 0 0 0.5em #609966 , 0 0 0.5em #609966;
     /* background-color: aliceblue; */
 }
 .DivTime{
@@ -68,7 +65,7 @@
     height: auto;
     /* background-color: aliceblue; */
     font-size: 1.5em;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .TitelTime{
@@ -83,7 +80,7 @@
     height: auto;
     /* background-color: aliceblue; */
     font-weight: bolder;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .OpenOrClods{
     display: flex;
@@ -95,7 +92,7 @@
     height: auto;
     /* background-color: aliceblue; */
     font-weight: 900;
-    text-shadow: 0 0 0.5em white , 0 0 0.5em white , 0 0 0.5em white;
+    text-shadow: 0 0 0.5em #609966 , 0 0 0.5em #609966 , 0 0 0.5em #609966;
 }
 .CantinerImage{
     position: relative;
@@ -108,10 +105,9 @@
     width: 90%;
     max-width: 600px;
     height: 200px;
-    background-color: aliceblue;
     border-radius: 25px;
-    box-shadow: 0 0 15px 5px white;
-    border: 0.2em solid white;
+    box-shadow: 0 0 15px 5px #40513B;
+    border: 0.2em solid #609966;
 }
 .UrlImage{
     width: 100%;

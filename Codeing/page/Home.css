@@ -39,7 +39,7 @@
 }
 
 .Home {
-  background-color: #1F7D53;
+  background-color: #EDF1D6;
 }
 
 .Fixd {
@@ -89,7 +89,7 @@
 .Header {
   width: 100%;
   height: 500px;
-  background-color: black;
+  /* background-color: black; */
   position: relative;
   display: flex;
   align-items: center;
@@ -114,8 +114,8 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: #27391c80;
-  box-shadow: 0 1vh 2vh 0.01vh #255F38;
+  background-color: #9dc08b7a;
+  box-shadow: 0 1vh 2vh 0.01vh #9DC08B;
 }
 
 .Header-ImagesHead {
@@ -126,7 +126,7 @@
   background-size: cover;
   top: 2vh;
   left: 2vh;
-  box-shadow: 0 0 10vh 1vh #1F7D53;
+  box-shadow: 0 0 10vh 1vh #9DC08B;
 }
 
 .Header-H1P1H1Head {
@@ -135,7 +135,7 @@
   right: 20px;
   font-size: 5rem;
   color: #F4F9F4;
-  text-shadow: 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89;
+  text-shadow: 0 0 0.2em #9DC08B, 0 0 0.2em #9DC08B, 0 0 0.2em #9DC08B;
 }
 
 .Header-H1Head {
@@ -145,7 +145,7 @@
   font-weight: 700;
   font-size: 5rem;
   color: #F4F9F4;
-  text-shadow: 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89;
+  text-shadow: 0 0 0.2em #9DC08B, 0 0 0.2em #9DC08B, 0 0 0.2em #9DC08B;
 }
 
 .Header-P1Head {
@@ -190,8 +190,8 @@
     text-align: center;
     width: 100%;
     height: 100%;
-    background-color: #27391c80;
-    box-shadow: 0 1vh 2vh 0.01vh #255F38;
+    background-color: #40513b7f;
+    box-shadow: 0 1vh 2vh 0.01vh #9DC08B;
   }
 
   .Header-ImagesHead {
@@ -202,7 +202,7 @@
     background-size: cover;
     top: 2vh;
     left: 2vh;
-    box-shadow: 0 0 10vh 1vh #1F7D53;
+    box-shadow: 0 0 10vh 1vh #9DC08B;
   }
 
   .Header-H1P1H1Head {
@@ -212,7 +212,7 @@
 
     font-size: 2rem;
     color: #ffffff;
-    text-shadow: 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89;
+    text-shadow: 0 0 0.2em #9DC08B, 0 0 0.2em #9DC08B, 0 0 0.2em #9DC08B;
   }
 
   .Header-H1Head {
@@ -223,18 +223,17 @@
 
     font-size: 2rem;
     color: #ffffff;
-    text-shadow: 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89;
+    text-shadow: 0 0 0.2em #9DC08B, 0 0 0.2em #9DC08B, 0 0 0.2em #9DC08B;
   }
 
   .Header-P1Head {
     position: absolute;
     width: 100%;
     bottom: 10px;
-
     font-size: 1rem;
     left: 0px;
-    color: #F4F9F4;
-    text-shadow: 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89, 0 0 0.2em #5C8D89;
+    color: #ffffff;
+    text-shadow: 0 0 0.2em #9DC08B, 0 0 0.2em #9DC08B, 0 0 0.2em #9DC08B;
   }
 
 
@@ -347,11 +346,12 @@
     justify-content: center;
     width: 80%;
     height: 180px;
-    background-color: #37751000;
+    background-color: #40513B;
     border-radius: 5px;
     margin: 3vh;
     border-radius: 1vh 0vh 1vh 1vh;
-    box-shadow: 0 0 15px 5px #3cd672, inset 0 0 55px 5px #3d7b51;
+    box-shadow: 0 0 15px 5px #9DC08B, inset 0 0 55px 5px #9DC08B;
+    border: 0.2em solid #609966;
   }
 
   .MinBoxe H2 {
@@ -444,7 +444,7 @@
     /* margin: 5%;
     padding: 5%; */
     /* background-color: #f1f1f1; */
-    color: white;
+    color: #40513B;
   }
 
   .TitelTextBox {
@@ -498,14 +498,16 @@
   height: 100px;
   border-radius: 25px;
   margin: 3vh;
-  box-shadow: 0 0 15px 5px #3cd672, inset 0 0 5px 5px #5cdc85;
+  background-color: #40513B;
+  border: 0.2em solid #609966;
+  box-shadow: 0 0 15px 5px #9DC08B, inset 0 0 5px 5px #9DC08B;
 }
 .FullScreenImage{
 width: 60px;
 height: 60px;
 background-size: cover;
 background-position: center;
-background-image: url(./FullScreenBB.png);
+background-image: url(./FullScreenWW.png);
 }
 .AddedScreen{
   position: relative;
@@ -519,7 +521,9 @@ background-image: url(./FullScreenBB.png);
   height: 100px;
   border-radius: 25px;
   margin: 3vh;
-  box-shadow: 0 0 15px 5px #3cd672, inset 0 0 5px 5px #5cdc85;
+  background-color: #40513B;
+  border: 0.2em solid #609966;
+  box-shadow: 0 0 15px 5px #9DC08B, inset 0 0 5px 5px #9DC08B;
 }
 .AddedScreenImage{
   position: relative;
@@ -528,6 +532,6 @@ background-image: url(./FullScreenBB.png);
   margin: 15px;
   background-size: cover;
   background-position: center;
-  background-image: url(./AddHomeBB.png);
+  background-image: url(./AddHomeWW.png);
 }
 

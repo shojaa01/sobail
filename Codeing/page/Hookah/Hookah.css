@@ -15,7 +15,7 @@ body {
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #5C8D89;
+    background-color: #EDF1D6;
 }
 
 .Container :nth-child(odd).box {
@@ -41,12 +41,12 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #A7D7C5;
+    background-color: #609966;
     width: 100%;
     height: 100%;
     left: 0%;
     /* box-shadow: 0 0 10px 2px black; */
-    border: 0.2em solid #F4F9F4;
+    border: 0.2em solid #9DC08B;
     border-radius: 25px;
     z-index: 999;
     border-radius: 25px;
@@ -99,7 +99,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #A7D7C5;
+    background-color: #609966;
     transition: all 0.5s ease-in-out;
     animation-name: backDIV2;
     animation-duration: 1s;
@@ -176,7 +176,7 @@ p {
     height: 100%;
     /* border: 0.2em solid #F4F9F4; */
     border-radius: 25px;
-    background-color: #A7D7C5;
+    background-color: #40513B;
 }
 
 .Titel {
@@ -231,8 +231,8 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #74B49B;
-    border: 0.2em solid #F4F9F4;
+    background-color: #40513B;
+    border: 0.2em solid #9DC08B;
     width: 100%;
     height: 100%;
     right: 0%;
@@ -288,7 +288,7 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #74B49B;
+    background-color: #40513B;
     transition: all 0.5s ease-in-out;
     animation-name: evenbackDIV2;
     animation-duration: 1s;
@@ -352,9 +352,8 @@ p {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    border: 0.0em solid #F4F9F4;
     border-radius: 25px;
-    background-color: #74B49B;
+    background-color: #609966;
 }
 
 .Container :nth-child(even).box:hover .backDIV div p {

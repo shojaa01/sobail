@@ -30,7 +30,7 @@ html {
     justify-content: space-evenly;
     width: 100%;
     height: auto;
-    background-color: #E9EFEC;
+    background-color: #9DC08B;
 }
 
 .Menu-Product-ul-li {
@@ -44,7 +44,8 @@ html {
     height: auto;
     margin: 0.3em 0.3em 0.3em 0.3em;
     padding: 0.3em;
-    /* background-color: rgb(255, 255, 255); */
+    background-color: #EDF1D6;
+    border-radius: 25px;
 }
 
 .Menu-Product-ul-li-a {
@@ -52,7 +53,7 @@ html {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-shadow: 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #16423C;
+    text-shadow: 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #40513B;
 }
 
 .cantiner {
@@ -64,8 +65,8 @@ html {
     justify-content: space-evenly;
     height: auto;
     background:  fixed center no-repeat cover;
-    background-color: #C4DAD2;
-    box-shadow: inset 0 0 20px 15px #E9EFEC;
+    background-color: #EDF1D6;
+    box-shadow: inset 0 0 20px 15px #9DC08B;
 }
 
 .Menu-Product-category {
@@ -84,16 +85,16 @@ html {
 
 .Menu-Name-Product-category {
     font-size: 2em;
-    color: #16423C;
+    color: #40513B;
     position: absolute;
-    text-shadow: 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #16423C;
+    text-shadow: 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #40513B;
     
 }
 
 .Menu-line-Product-category {
     font-size: 2em;
-    color: #16423C;
-    text-shadow: 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #16423C;
+    color: #40513B;
+    text-shadow: 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #40513B;
 }
 
 
@@ -107,12 +108,12 @@ html {
     width: 90%;
     /* height:  auto; */
     height: 120px;
-    border: 0.2em solid #ffffff;
+    border: 0.2em solid #609966;
     margin: 1em;
     transition: all 0.3s ease-in-out;
     border-radius: 25px;
-    box-shadow: inset 0 0 20px 5px #6A9C89, 0 0 20px 5px #6A9C89;
-    background-color: #16423C;
+    box-shadow: inset 0 0 20px 5px #9DC08B, 0 0 20px 5px #9DC08B;
+    background-color: #40513B;
     direction: rtl;
 }
 
@@ -434,7 +435,7 @@ html {
         justify-content: space-evenly;
         width: 100%;
         height: auto;
-        background-color: #E9EFEC;
+        background-color: #EDF1D6;
     }
     
     .Menu-Product-ul-li {
@@ -456,7 +457,7 @@ html {
         color: rgb(0, 0, 0);
         text-decoration: none;
         font-family: Georgia, 'Times New Roman', Times, serif;
-        text-shadow: 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #16423C;
+        text-shadow: 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #40513B;
     }
     
     .cantiner {
@@ -468,8 +469,8 @@ html {
         justify-content: space-evenly;
         height: auto;
         background:  fixed center no-repeat cover;
-        background-color: #C4DAD2;
-        box-shadow: inset 0 0 20px 15px #E9EFEC;
+        background-color: #9DC08B;
+        box-shadow: inset 0 0 20px 15px #EDF1D6;
     }
     
     .Menu-Product-category {
@@ -488,16 +489,16 @@ html {
     
     .Menu-Name-Product-category {
         font-size: 2em;
-        color: #16423C;
+        color: #40513B;
         position: absolute;
-        text-shadow: 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #16423C;
+        text-shadow: 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #40513B;
         
     }
     
     .Menu-line-Product-category {
         font-size: 2em;
-        color: #16423C;
-        text-shadow: 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #16423C;
+        color: #40513B;
+        text-shadow: 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #40513B;
     }
     
     
@@ -515,8 +516,8 @@ html {
         margin: 1em;
         transition: all 0.3s ease-in-out;
         border-radius: 25px;
-        box-shadow: inset 0 0 20px 5px #6A9C89, 0 0 20px 5px #6A9C89;
-        background-color: #16423C;
+        box-shadow: inset 0 0 20px 5px #9DC08B, 0 0 20px 5px #9DC08B;
+        background-color: #40513B;
         direction: rtl;
     }
     
