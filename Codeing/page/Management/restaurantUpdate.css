@@ -30,7 +30,7 @@ html {
     justify-content: space-evenly;
     width: 100%;
     height: auto;
-    background-color: #E9EFEC;
+    background-color: #9DC08B;
 }
 
 .Menu-Product-ul-li {
@@ -44,7 +44,8 @@ html {
     height: auto;
     margin: 0.3em 0.3em 0.3em 0.3em;
     padding: 0.3em;
-    /* background-color: rgb(255, 255, 255); */
+    background-color: #EDF1D6;
+    border-radius: 25px;
 }
 
 .Menu-Product-ul-li-a {
@@ -52,7 +53,7 @@ html {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-shadow: 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #16423C;
+    text-shadow: 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #40513B;
 }
 
 .cantiner {
@@ -64,8 +65,8 @@ html {
     justify-content: space-evenly;
     height: auto;
     background:  fixed center no-repeat cover;
-    background-color: #C4DAD2;
-    box-shadow: inset 0 0 20px 15px #E9EFEC;
+    background-color: #EDF1D6;
+    box-shadow: inset 0 0 20px 15px #9DC08B;
 }
 
 .Menu-Product-category {
@@ -84,16 +85,16 @@ html {
 
 .Menu-Name-Product-category {
     font-size: 2em;
-    color: #16423C;
+    color: #40513B;
     position: absolute;
-    text-shadow: 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #16423C;
+    text-shadow: 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #40513B;
     
 }
 
 .Menu-line-Product-category {
     font-size: 2em;
-    color: #16423C;
-    text-shadow: 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #16423C;
+    color: #40513B;
+    text-shadow: 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #40513B;
 }
 
 
@@ -107,12 +108,12 @@ html {
     width: 90%;
     /* height:  auto; */
     height: 120px;
-    border: 0.2em solid #ffffff;
+    border: 0.2em solid #609966;
     margin: 1em;
     transition: all 0.3s ease-in-out;
     border-radius: 25px;
-    box-shadow: inset 0 0 20px 5px #6A9C89, 0 0 20px 5px #6A9C89;
-    background-color: #16423C;
+    box-shadow: inset 0 0 20px 5px #9DC08B, 0 0 20px 5px #9DC08B;
+    background-color: #40513B;
     direction: rtl;
 }
 
@@ -400,45 +401,19 @@ html {
     /* background-color: rgb(82, 131, 94); */
     font-size: 0.3em;
 }
-.BoxUpdateButton{
-    display: none;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: #E9EFEC;
-    /* border: 0.5em solid #16423C; */
-    box-shadow: inset 0 0 20px 10px #6A9C89;
-    z-index: 999;
-    border-radius: 25px;
-}.Menu-Product-box:hover .BoxUpdateButton{display: flex; }
-.UpdateText{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-evenly;
-    font-size: 1.3em;
-    margin-bottom: 0em;
-    font-weight: 900;
-}
-.UpdateButton{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-evenly;
-    width: 250px;
-    height: 40px;
-    background-color: #C4DAD2;
-    border-radius: 250px;
-    border: 0.1em solid #6A9C89;
-    box-shadow: 0 0 15px 5px #16423C;
-    color: #16423C;
-    font-size: 1.7em;
-    font-weight: 900;
-}
+
 @media (min-width:900px) {
+    * {
+        margin: 0;
+        padding: 0;
+        transition: all 0.3s ease-in-out;
+        text-decoration: none;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
     .header {
         position: relative;
         display: flex;
@@ -460,7 +435,7 @@ html {
         justify-content: space-evenly;
         width: 100%;
         height: auto;
-        background-color: #E9EFEC;
+        background-color: #EDF1D6;
     }
     
     .Menu-Product-ul-li {
@@ -482,7 +457,7 @@ html {
         color: rgb(0, 0, 0);
         text-decoration: none;
         font-family: Georgia, 'Times New Roman', Times, serif;
-        text-shadow: 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #16423C;
+        text-shadow: 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #40513B;
     }
     
     .cantiner {
@@ -494,8 +469,8 @@ html {
         justify-content: space-evenly;
         height: auto;
         background:  fixed center no-repeat cover;
-        background-color: #C4DAD2;
-        box-shadow: inset 0 0 20px 15px #E9EFEC;
+        background-color: #9DC08B;
+        box-shadow: inset 0 0 20px 15px #EDF1D6;
     }
     
     .Menu-Product-category {
@@ -514,16 +489,16 @@ html {
     
     .Menu-Name-Product-category {
         font-size: 2em;
-        color: #16423C;
+        color: #40513B;
         position: absolute;
-        text-shadow: 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #16423C;
+        text-shadow: 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #40513B;
         
     }
     
     .Menu-line-Product-category {
         font-size: 2em;
-        color: #16423C;
-        text-shadow: 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #6A9C89, 0.1em 0.1em 0.1em #16423C;
+        color: #40513B;
+        text-shadow: 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #9DC08B, 0.1em 0.1em 0.1em #40513B;
     }
     
     
@@ -537,12 +512,12 @@ html {
         width: 90%;
         /* height:  auto; */
         height: 150px;
-        border: 0.2em solid #6A9C89;
+        border: 0.2em solid #ffffff;
         margin: 1em;
         transition: all 0.3s ease-in-out;
         border-radius: 25px;
-        box-shadow: inset 0 0 20px 5px #6A9C89, 0 0 20px 5px #6A9C89;
-        background-color: #16423C;
+        box-shadow: inset 0 0 20px 5px #9DC08B, 0 0 20px 5px #9DC08B;
+        background-color: #40513B;
         direction: rtl;
     }
     
@@ -628,7 +603,7 @@ html {
         font-size: 1.5em;
     }
     
-    .Menu-Size-And-Price {}
+
     
     .Menu-Used-Items {
         display: none;
@@ -678,9 +653,9 @@ html {
         width: 90%;
         height: 80%;
         border-radius: 25px;
-        border: 0.2em #6e6e6e solid;
+        border: 0.1em #ffffff solid;
         background-size: cover;
-        background-image: url(../../../Images/370860348_11475300.png);
+ 
     }
     
     .Menu-Like-And-Comment-box {
@@ -742,12 +717,12 @@ html {
     }
     
     .Menu-Comment-image {
-        width: 90%;
-        height: 90%;
+        width: 50px;
+        height: 50px;
         background-clip: content-box;
         background-position: center;
         background-size: cover;
-        background-image: url(../../../Images/icons8-comment-100.png);
+        background-image: url(./commentWW.png);
     
     }
     
@@ -803,15 +778,17 @@ html {
     }
     
     .Menu-Like-image {
-        width: 90%;
-        height: 90%;
+        width: 50px;
+        height: 50px;
         background-clip: content-box;
         background-position: center;
         background-size: cover;
-        background-image: url(../../../Images/icons8-filled-heart-96.png);
+        background-image: url(./likeBB.png);
         /* background-color: aliceblue; */
     }
-    
+    .RedMenuLikeImage{
+        background-image: url(./likeRR.png);
+    }
     .Menu-Number-Like-box {
         position: absolute;
         display: flex;
@@ -827,47 +804,6 @@ html {
         color: white;
         /* background-color: rgb(82, 131, 94); */
         font-size: 0.6em;
-    }
-    
-    
-    
-    .BoxUpdateButton{
-        display: none;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        background-color: #E9EFEC;
-        border: 0.5em solid #16423C;
-        box-shadow: inset 0 0 20px 10px #6A9C89;
-        z-index: 999;
-        border-radius: 25px;
-    }.Menu-Product-box:hover .BoxUpdateButton{display: flex; }
-    .UpdateText{
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: space-evenly;
-        font-size: 2em;
-        margin: 1em;
-        margin-bottom: 0em;
-        font-weight: 900;
-    }
-    .UpdateButton{
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: space-evenly;
-        width: 250px;
-        height: 80px;
-        background-color: #C4DAD2;
-        border-radius: 250px;
-        border: 0.1em solid #6A9C89;
-        box-shadow: 0 0 15px 5px #16423C;
-        color: #16423C;
-        font-size: 2em;
     }
     .Menu-Product-ul-li {
         position: relative;
@@ -904,7 +840,7 @@ html {
         justify-content: space-evenly;
         height: auto;
         background:  fixed center no-repeat cover;
-        /* background-image:url(../../../Images/101851.jpg) ; */
+        /* background-image:url(../../Images/101851.jpg) ; */
         /* box-shadow: inset 0 0 30px 15px #6e6e6e; */
     }
     .Menu-Product-category {
@@ -959,4 +895,42 @@ html {
         /* box-shadow: inset 0 0 20px 5px white, 0 0 20px 5px white; */
         transition: all 0.3s ease-in-out;
     }
+}
+.BoxUpdateButton{
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #E9EFEC;
+    /* border: 0.5em solid #16423C; */
+    box-shadow: inset 0 0 20px 10px #6A9C89;
+    z-index: 999;
+    border-radius: 25px;
+}.Menu-Product-box:hover .BoxUpdateButton{display: flex; }
+.UpdateText{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 1.3em;
+    margin-bottom: 0em;
+    font-weight: 900;
+}
+.UpdateButton{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 250px;
+    height: 40px;
+    background-color: #C4DAD2;
+    border-radius: 250px;
+    border: 0.1em solid #6A9C89;
+    box-shadow: 0 0 15px 5px #16423C;
+    color: #16423C;
+    font-size: 1.7em;
+    font-weight: 900;
 }
