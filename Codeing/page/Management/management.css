@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html,
+body{
+    height: 100%;
+    background-color: rgb(20, 32, 44);
+}
+.continer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.VC{
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 5px solid transparent;
+    transition: all 0.5s ease-in-out;
+    animation-timing-function: 0;
+    border-image: linear-gradient(90deg, #6f0077, transparent) 1;
+    animation: alternate, move-border 5s linear infinite;
+    margin: 1em;
+
+}
+
+.VC a {
+    color: white;
+    font-weight: 900;
+    font-size: 2em;
+    text-shadow: 1px 2px 5px #6f0077, 1px 2px 5px #6f0077, 1px 2px 5px #6f0077;
+}
+@media (max-width: 900px) {
+    .VC a {
+        color: white;
+        font-weight: 900;
+        font-size: 1.2em;
+    }
+}
+
+.VC1{
+    width: 40%;
+    max-width: 500px;
+    height: 100px;
+}
+
+.VC2{
+    width: 40%;
+    max-width: 500px;
+    height: 100px;
+}
+
+.VC3{
+    width: 40%;
+    height: 200px;
+}
+
+.VC4{
+    width: 40%;
+    max-width: 500px;
+    height: 100px;
+}
+
+.VC5{
+    width: 40%;
+    max-width: 500px;
+    height: 100px;
+}
+
+.VC6{
+    width: 40%;
+    max-width: 500px;
+    height: 200px;
+}
+
+.VC7{
+    width: 90%;
+    max-width: 900px;
+    height: 100px;
+}
+
+.VC8{
+    width: 40%;
+    max-width: 500px;
+    height: 100px;
+}
+
+.VC9{
+    width: 40%;
+    max-width: 500px;
+    height: 100px;
+}
+
+
+
+/* --------------------------------------------------------------------- */
+@keyframes glow {
+    0% { box-shadow: 0 0 5px #ff00ff; }
+    50% { box-shadow: 0 0 20px #ff00ff; }
+    100% { box-shadow: 0 0 5px #ff00ff; }
+}
+
+@keyframes move-border {
+    0% { border-image-source: linear-gradient(90deg, #ff00ff, transparent); }
+    25% { border-image-source: linear-gradient(180deg, #ff00ff, transparent); }
+    50% { border-image-source: linear-gradient(270deg, #ff00ff, transparent); }
+    75% { border-image-source: linear-gradient(360deg, #ff00ff, transparent); }
+    100% { border-image-source: linear-gradient(90deg, #ff00ff, transparent); }
+}
