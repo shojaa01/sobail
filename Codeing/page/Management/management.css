@@ -29,7 +29,6 @@ body{
     animation-timing-function: 0;
     border-image: linear-gradient(90deg, #6f0077, transparent) 1;
     animation: alternate, move-border 5s linear infinite;
-    margin: 1em;
 
 }
 
