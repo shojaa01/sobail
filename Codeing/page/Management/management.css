@@ -1,14 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
+
 html,
-body{
+body {
     height: 100%;
-    background-color: #EDF1D6;
+    background-color: #18230F;
 }
-.continer{
+@font-face {
+    font-family: woff;
+    src: url(iranyekanweblightfanum.woff) format("woff");
+  }
+.continer {
     position: relative;
     display: flex;
     align-items: center;
@@ -17,114 +22,98 @@ body{
     flex-wrap: wrap;
 }
 
-.VC{
-    position: relative;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    border: 5px solid transparent;
-    transition: all 0.5s ease-in-out;
-    animation-timing-function: 0;
-    border-image: linear-gradient(90deg, #4b0250, transparent) 1;
-    animation: alternate, move-border 5s linear infinite;
-    margin-top: 2em;
+@media (max-width:900px){
 
-}
-
-.VC a {
-    color: #9DC08B;
-    font-weight: 900;
-    font-size: 2em;
-    text-shadow: 1px 2px 5px #EDF1D6, 1px 2px 5px #EDF1D6, 1px 2px 5px #EDF1D6;
-}
-@media (max-width: 900px) {
-    .VC a {
-        color: #000000;
-        font-weight: 900;
-        font-size: 1.2em;
-    }
-    .VC{
+    .continer :nth-child(even).VC{
         position: relative;
         display: flex;
         align-items: center;
         text-align: center;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-wrap: wrap;
-        border: 5px solid transparent;
-        transition: all 0.5s ease-in-out;
-        animation-timing-function: 0;
-        border-image: linear-gradient(90deg, #4b0250, transparent) 1;
-        animation: alternate, move-border 5s linear infinite;
-        margin-top: 2em;
-        background-color: #40513B;
-    
+        background-color: #27391C;
+        border: 0.2em solid #255F38;
+        box-shadow: 0 0 15px 5px #255F38;
+        width: 70%;
+        height: 100px;
+        left: 15%;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        margin: 25px 0px 25px  0px; 
     }
+    .continer :nth-child(odd).VC{
+        position: relative;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-color: #27391C;
+        border: 0.2em solid #255F38;
+        box-shadow: 0 0 15px 5px #255F38;
+        width: 70%;
+        right: 15%;
+        height: 100px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin: 25px 0px 25px  0px; 
+    }
+
+    .VC a{
+        color: rgb(255, 255, 255);
+        font-size: 1.3em;
+        font-weight: 900;
+        font-family: woff;
+    }
+
+    /* .VC1 {} */
+/*  */
+    /* .VC2 {} */
+/*  */
+    /* .VC3 {} */
+/*  */
+    /* .VC4 {} */
+/*  */
+    /* .VC5 {} */
+/*  */
+    /* .VC6 {} */
+/*  */
+    /* .VC7 {} */
+/*  */
+    /* .VC8 {} */
+/*  */
+    /* .VC9 {} */
+
 }
 
-.VC1{
-    width: 40%;
-    max-width: 500px;
-    height: 100px;
-}
+@media (min-width:900px) {
+    .VC {
+        position: relative;
+        width: 70%;
+        height: 100px;
+        background-color: #000000;
+    }
 
-.VC2{
-    width: 40%;
-    max-width: 500px;
-    height: 100px;
-}
+    .VC a{
+        color: black;
+    }
 
-.VC3{
-    width: 40%;
-    height: 200px;
-}
+    .VC1 {}
 
-.VC4{
-    width: 40%;
-    max-width: 500px;
-    height: 100px;
-}
+    .VC2 {}
 
-.VC5{
-    width: 40%;
-    max-width: 500px;
-    height: 100px;
-}
+    .VC3 {}
 
-.VC6{
-    width: 40%;
-    max-width: 500px;
-    height: 200px;
-}
+    .VC4 {}
 
-.VC7{
-    width: 90%;
-    max-width: 900px;
-    height: 100px;
-}
+    .VC5 {}
 
-.VC8{
-    width: 40%;
-    max-width: 500px;
-    height: 100px;
-}
+    .VC6 {}
 
-.VC9{
-    width: 40%;
-    max-width: 500px;
-    height: 100px;
-}
+    .VC7 {}
 
+    .VC8 {}
 
+    .VC9 {}
 
-/* --------------------------------------------------------------------- */
-
-
-@keyframes move-border {
-    0% { border-image-source: linear-gradient(90deg, #609966, transparent); box-shadow:  inset  0 0 10px 0px #9DC08B ;}
-    25% { border-image-source: linear-gradient(180deg, #609966, transparent); box-shadow:inset  0 0 15px 0px #9DC08B ;}
-    50% { border-image-source: linear-gradient(270deg, #609966, transparent); box-shadow:inset  0 0 20px 0px #9DC08B ;}
-    75% { border-image-source: linear-gradient(360deg, #609966, transparent); box-shadow:inset  0 0 15px 0px #9DC08B ;}
-    100% { border-image-source: linear-gradient(90deg, #609966, transparent); box-shadow:inset  0 0 10px 0px #9DC08B ;}
 }
