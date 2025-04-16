@@ -346,10 +346,10 @@
     justify-content: center;
     width: 80%;
     height: 180px;
-    background-color: #40513B;
     border-radius: 5px;
     margin: 3vh;
     border-radius: 1vh 0vh 1vh 1vh;
+    background-color: #40513B;
     box-shadow: 0 0 15px 5px #9DC08B, inset 0 0 55px 5px #9DC08B;
     border: 0.2em solid #609966;
   }
