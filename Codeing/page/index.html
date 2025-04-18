@@ -65,13 +65,12 @@
         })
     </script>
     <div class="Home">
-
         <div class="Header">
             <div class="Header-background" style="background-image: url(blogpics01.png);">
                 <div class="Header-backgroundCover">
-                    <div class="clickAMANGE">
+                    <div class="clickAMANGE" id="clickalinkrotate" onclick="clickAlink()">
                         <div   class="Header-ImagesHead" style="background-image: url(173859614367a0df2f89a96.jpg);"></div>
-                        <a href="./Management/management.html" class="rotiteBackA">مدریت</a>
+                        <a class="rotiteBackA"  href="./Management/management.html">مدریت</a>
                     </div>
                     <div class="Header-H1P1H1Head">سوبالی</div>
                     <div class="Header-H1Head">کافه رستوران</div>
@@ -156,7 +155,7 @@
                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
             }, function (err) {
                 // registration failed :(
-                console.log('ServiceWorker registration failed: ', err);
+                // console.log('ServiceWorker registration failed: ', err);
             });
         });
     }
@@ -204,9 +203,16 @@
     }
     FullScreen.addEventListener("click", () => {
         document.documentElement.requestFullscreen().catch((e) => {
-            console.log(e)
+
         })
     })
+
+
+    const clickalinkrotate = document.getElementById('clickalinkrotate');
+    function clickAlink(){
+        console.log("add");
+        clickalinkrotate.classList.toggle('CLICKjs');
+    }
 
 </script>
 
