@@ -283,7 +283,7 @@
 
 .Header-ImagesHead:hover {
   animation-name: Header-ImagesHead;
-  animation-duration: 0.5s;
+  animation-duration: 0.4s;
   animation-delay: 0s;
   animation-direction: alternate;
   animation-fill-mode: both;
