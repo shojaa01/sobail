@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   font-family: vazir;
+  text-decoration: none;
 }
 
 /* ------------------------------------------------------ */
@@ -124,8 +125,6 @@
   height: 200px;
   border-radius: 25vh;
   background-size: cover;
-  top: 2vh;
-  left: 2vh;
   box-shadow: 0 0 10vh 1vh #9DC08B;
 }
 
@@ -200,8 +199,6 @@
     height: 100px;
     border-radius: 100vh;
     background-size: cover;
-    top: 2vh;
-    left: 2vh;
     box-shadow: 0 0 10vh 1vh #9DC08B;
   }
 
@@ -239,6 +236,189 @@
 
 }
 
+/* -------------------------------------------------------------------------    Header-ImagesHead  */
+.clickAMANGE {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 100vh;
+  background-size: cover;
+  top: 2vh;
+  left: 2vh;
+  box-shadow: 0 0 10vh 1vh #9DC08B;
+  z-index: 97;
+}
+
+.clickAMANGE:hover {
+  animation-name: clickAMANGE;
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes clickAMANGE {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+.Header-ImagesHead {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100vh;
+  background-size: cover;
+  box-shadow: 0 0 10vh 1vh #9DC08B;
+  z-index: 99;
+}
+
+.Header-ImagesHead:hover {
+  animation-name: Header-ImagesHead;
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes Header-ImagesHead {
+  0% {
+    display: block;
+  }
+
+  49% {
+    display: block;
+  }
+
+  50% {
+    display: none;
+  }
+
+  100% {
+    display: none;
+  }
+}
+
+.rotiteBackA {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100vh;
+  background-size: cover;
+  box-shadow: 0 0 10vh 1vh #9DC08B;
+  background-color: #9DC08B;
+  color: black;
+  z-index: 98;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  font-weight: 900;
+}
+
+@media (min-width:900px) {
+  .clickAMANGE {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100vh;
+    background-size: cover;
+    top: 2vh;
+    left: 2vh;
+    box-shadow: 0 0 10vh 1vh #9DC08B;
+    z-index: 97;
+  }
+
+  .clickAMANGE:hover {
+    animation-name: clickAMANGE;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+  }
+
+  @keyframes clickAMANGE {
+    0% {
+      transform: rotateY(0deg);
+    }
+
+    100% {
+      transform: rotateY(180deg);
+    }
+  }
+  .clickAMANGE:hover .Header-ImagesHead{
+    animation-name: Header-ImagesHead;
+    animation-duration: 0.4s;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+  }
+
+  @keyframes Header-ImagesHead {
+    0% {
+      display: block;
+    }
+
+    49% {
+      display: block;
+    }
+
+    50% {
+      display: none;
+    }
+
+    100% {
+      display: none;
+    }
+  }
+  .Header-ImagesHead {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100vh;
+    background-size: cover;
+    box-shadow: 0 0 10vh 1vh #9DC08B;
+    z-index: 99;
+  }
+
+
+
+
+
+  .rotiteBackA {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100vh;
+    background-size: cover;
+    box-shadow: 0 0 10vh 1vh #9DC08B;
+    background-color: #9DC08B;
+    color: black;
+    z-index: 98;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+    font-weight: 900;
+  }
+}
+
 /* ------------------------------------------------------------------------          Neon  */
 
 .Neon-box {
@@ -273,15 +453,17 @@
   display: flex;
   align-items: center;
   text-align: center;
-  justify-content: center;
-  width: 35%;
-  height: 600px;
-  background-color: #27391C;
-
-  box-shadow: 0 0 15px 5px #255F38;
-  border-radius: 5vh 0vh 5vh 5vh;
-  margin: 5vh;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 1em;
+  width: auto;
+  height: auto;
+  background-color: #40513B;
+  box-shadow: 0 0 15px 5px #9DC08B, inset 0 0 55px 5px #9DC08B;
+  border: 0.2em solid #609966;
+  border-radius: 5vh 5vh 5vh 5vh;
   color: #FBFFE4;
+  margin: 2%;
 }
 
 .ImagesBoxSize {
@@ -300,29 +482,42 @@
 }
 
 .MinBoxe H2 {
-  position: absolute;
-  font-size: 5rem;
-  top: 120px;
-  right: 10px;
+  position: relative;
+  font-size: 3rem;
+  margin: 1em;
 }
 
 .MinBoxe H3 {
-  position: absolute;
-  font-size: 5rem;
-  top: 100px;
-  right: 120px;
+  position: relative;
+  font-size: 2rem;
+  margin: 1em;
 }
 
 .MinBoxe P {
-  position: absolute;
-  font-size: 3rem;
+  position: relative;
+  width: 100%;
+  font-size: 1.5rem;
   font-weight: 800;
-  bottom: 30px;
-  margin: 1vh;
 }
 
 
 @media (max-width:900px) {
+  .MinBoxe {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: auto;
+    background-color: #40513B;
+    box-shadow: 0 0 15px 5px #9DC08B, inset 0 0 55px 5px #9DC08B;
+    border: 0.2em solid #609966;
+    border-radius: 5vh 5vh 5vh 5vh;
+    color: #FBFFE4;
+    margin: 5%;
+  }
+
   .ImagesBoxSize {
     position: absolute;
     width: 50px;
@@ -338,49 +533,27 @@
     /* box-shadow: 0 0 15px 5px #255F38; */
   }
 
-  .MinBoxe {
-    position: relative;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    width: 80%;
-    height: 180px;
-    border-radius: 5px;
-    margin: 3vh;
-    border-radius: 1vh 0vh 1vh 1vh;
-    background-color: #40513B;
-    box-shadow: 0 0 15px 5px #9DC08B, inset 0 0 55px 5px #9DC08B;
-    border: 0.2em solid #609966;
-  }
+
 
   .MinBoxe H2 {
-    /* text-shadow: 0 0 0.5em #255F38, 0 0 00.5em #255F38, 0 0 0.5em #255F38; */
-    color: rgb(255, 255, 255);
-    position: absolute;
+    position: relative;
     font-size: 2rem;
-    top: 10px;
-    right: 30px;
+    margin: 1em;
   }
 
   .MinBoxe H3 {
-    /* text-shadow: 0 0 0.5em #255F38, 0 0 00.5em #255F38, 0 0 0.5em #255F38; */
-    color: rgb(255, 255, 255);
-    position: absolute;
-    font-size: 3rem;
-    top: 10px;
-    left: 10px;
+    position: relative;
+    font-size: 1.5rem;
+    margin: 1em;
   }
 
   .MinBoxe P {
-    /* text-shadow: 0 0 0.5em #255F38, 0 0 00.5em #255F38, 0 0 0.5em #255F38; */
-    color: rgb(255, 255, 255);
-    position: absolute;
-    font-size: 1.2rem;
+    position: relative;
+    width: 100%;
+    font-size: 1rem;
     font-weight: 800;
-    bottom: 20px;
-    margin: 1vh;
   }
+
 }
 
 
@@ -403,7 +576,7 @@
   /* margin: 5%;
   padding: 5%; */
   /* background-color: #f1f1f1; */
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .TitelTextBox {
@@ -475,7 +648,7 @@
 
 
 /* --------------------------------------------------------------------------------- */
-.boxbtntwo{
+.boxbtntwo {
   position: relative;
   display: flex;
   align-items: center;
@@ -486,7 +659,8 @@
   width: 100%;
   height: 150px;
 }
-.FullScreen{
+
+.FullScreen {
   position: relative;
   display: flex;
   align-items: center;
@@ -502,14 +676,16 @@
   border: 0.2em solid #609966;
   box-shadow: 0 0 15px 5px #9DC08B, inset 0 0 5px 5px #9DC08B;
 }
-.FullScreenImage{
-width: 60px;
-height: 60px;
-background-size: cover;
-background-position: center;
-background-image: url(./FullScreenWW.png);
+
+.FullScreenImage {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./FullScreenWW.png);
 }
-.AddedScreen{
+
+.AddedScreen {
   position: relative;
   display: flex;
   align-items: center;
@@ -525,7 +701,8 @@ background-image: url(./FullScreenWW.png);
   border: 0.2em solid #609966;
   box-shadow: 0 0 15px 5px #9DC08B, inset 0 0 5px 5px #9DC08B;
 }
-.AddedScreenImage{
+
+.AddedScreenImage {
   position: relative;
   width: 70px;
   height: 70px;
@@ -534,4 +711,3 @@ background-image: url(./FullScreenWW.png);
   background-position: center;
   background-image: url(./AddHomeWW.png);
 }
-
