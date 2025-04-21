@@ -5,8 +5,8 @@
 }
 
 :root {
-  --card-height: 15vh;
-  --card-width: calc(var(--card-height) / 0.5);
+  --card-height: 10vh;
+  --card-width: calc(var(--card-height) / 0.3);
 }
 
 
@@ -17,7 +17,7 @@ body {
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   padding-top: 2rem;
   padding-bottom: 2rem;
   box-sizing: border-box;
@@ -26,6 +26,8 @@ body {
 
 .card {
   background: #ffffff;
+  background-position: center;
+  background-size: cover;
   width: var(--card-width);
   height: var(--card-height);
   padding: 3px;
@@ -36,33 +38,33 @@ body {
   text-align: center;
   display: flex;
   font-size: 1.5em;
-  color: rgb(88 199 250 / 0%);
+  color: rgb(0, 0, 0);
   cursor: pointer;
   font-family: cursive;
   margin: 10px;
 }
-
-.card:hover {
-  color: rgb(88 199 250 / 100%);
-  transition: color 1s;
+.price{
+  position: absolute;
+  top: -28px;
+  right: 10px;
+  display: none;
 }
-.card:hover:before, .card:hover:after {
-  animation: none;
-  opacity: 0;
+.card:hover .price{
+  display: block;
 }
 
 
 .card::before {
   content: "";
   width: 104%;
-  height: 102%;
+  height: 104%;
   border-radius: 8px;
   background-image: linear-gradient(
     var(--rotate)
     , #5ddcff, #3c67e3 43%, #4e00c2);
     position: absolute;
     z-index: -1;
-    top: -1%;
+    top: -2%;
     left: -2%;
     animation: spin 2.5s linear infinite;
 }
