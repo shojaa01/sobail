@@ -687,7 +687,6 @@ footer{
   width: 100%;
   height: 400px;
   background-color: #40513B;
-  box-shadow: inset 0 0 15px 5px #EDF1D6;
 }
 
 .boxCONT{
@@ -708,8 +707,8 @@ footer{
   background-position: center;
   background-size: cover;
   right: 15px;
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
 }
 
 .footerTitel{
