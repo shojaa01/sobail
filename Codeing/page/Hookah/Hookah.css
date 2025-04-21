@@ -15,7 +15,7 @@ body {
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #EDF1D6;
+    background-color: #D0E7D2;
 }
 
 .Container :nth-child(odd).box {
@@ -41,12 +41,12 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #609966;
+    background-color: #618264;
     width: 100%;
     height: 100%;
     left: 0%;
     /* box-shadow: 0 0 10px 2px black; */
-    border: 0.2em solid #9DC08B;
+    border: 0.2em solid #B0D9B1;
     border-radius: 25px;
     z-index: 999;
     border-radius: 25px;
@@ -99,7 +99,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #609966;
+    background-color: #618264;
     transition: all 0.5s ease-in-out;
     animation-name: backDIV2;
     animation-duration: 1s;
@@ -176,7 +176,9 @@ p {
     height: 100%;
     /* border: 0.2em solid #F4F9F4; */
     border-radius: 25px;
-    background-color: #40513B;
+    background-color: #79AC78;
+    border: 0.2em solid #618264;
+    box-shadow: 0 0 15px 5px #B0D9B1;
 }
 
 .Titel {
@@ -231,8 +233,8 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #40513B;
-    border: 0.2em solid #9DC08B;
+    background-color: #618264;
+    border: 0.2em solid #B0D9B1;
     width: 100%;
     height: 100%;
     right: 0%;
@@ -288,7 +290,7 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #40513B;
+    background-color: #618264;
     transition: all 0.5s ease-in-out;
     animation-name: evenbackDIV2;
     animation-duration: 1s;
@@ -353,7 +355,9 @@ p {
     width: 100%;
     height: 100%;
     border-radius: 25px;
-    background-color: #609966;
+    background-color: #79AC78;
+    border: 0.2em solid #618264;
+    box-shadow: 0 0 15px 5px #B0D9B1;
 }
 
 .Container :nth-child(even).box:hover .backDIV div p {

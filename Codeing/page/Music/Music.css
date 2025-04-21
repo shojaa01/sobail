@@ -1,48 +1,53 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
+
 /* .Container{} */
 
-body{
+body {
     position: absolute;
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content:space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     background-color: #EDF1D6;
     width: 100%;
     height: 100%;
 }
 
-.titel{
-font-size: 1.5em;
-color: #40513B;
-margin: 1em;
-font-weight: 900;
+.titel {
+    font-size: 2em;
+    color: #40513B;
+    margin: 1em;
+    font-weight: 900;
+    text-shadow: 0.1em 0.2em 0.5em #9DC08B, 0.1em 0.2em 0.5em #9DC08B, 0.1em 0.2em 0.5em #9DC08B;
 
 
 }
-.form{
+
+.form {
     width: 100%;
     position: relative;
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content:space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-}.form input{
+}
+
+.form input {
     position: relative;
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content:center;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 0.5em;
-    margin: 0.5em;
+    padding: 1em;
+    margin: 1em;
     font-size: 1.2em;
     border-radius: 25px;
     border: 0.2em solid #9DC08B;
@@ -51,6 +56,7 @@ font-weight: 900;
     color: white;
     height: auto;
 }
+
 /* .NameMusic{ */
 /*  */
 /* } */
@@ -60,56 +66,59 @@ font-weight: 900;
 /* .LinkMusic{ */
 /*  */
 /* } */
-/* .SubmitMusic{ */
-/*  */
-/* } */
-.SubmitMusic{
-    padding: 1em;
-    }
+.SubmitMusic {
+    width: 80%;
+}
+
+
 @media (min-width:900) {
-    body{
+    body {
         position: absolute;
         display: flex;
         align-items: center;
         text-align: center;
-        justify-content:space-evenly;
+        justify-content: center;
         flex-wrap: wrap;
         background-color: #EDF1D6;
         width: 100%;
         height: 100%;
     }
-    
-    .titel{
-    font-size: 2.5em;
-    color: white;
-    margin: 1em;
-    
-    
+
+    .titel {
+        font-size: 2.5em;
+        color: white;
+        margin: 1em;
+
+
     }
-    .form{
+
+    .form {
         width: 100%;
         position: relative;
         display: flex;
         align-items: center;
         text-align: center;
-        justify-content:space-evenly;
+        justify-content: center;
         flex-wrap: wrap;
         flex-direction: column;
-    }.form input{
+    }
+
+    .form input {
         position: relative;
         display: flex;
         align-items: center;
         text-align: center;
-        justify-content:center;
+        justify-content: center;
         flex-wrap: wrap;
         padding: 1em;
-        margin: 1em;
+        margin: 1.8em;
         font-size: 1.5em;
         border-radius: 25px;
         border: 0.2em solid #9DC08B;
         box-shadow: 0 0 50px 0px rgba(255, 255, 255, 0.549);
         height: auto;
     }
+
     /* .NameMusic{ */
     /*  */
     /* } */
@@ -120,65 +129,4 @@ font-weight: 900;
     /*  */
     /* } */
 
-    .BoxA{
-        width: 100%;
-        position: relative;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content:space-evenly;
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin-top: 2em;
-    }.BoxA div {
-        margin: 0.5em;
-        font-size: 2em;
-        color: white;
-        font-weight: 900;
-    }
-    
-    .ASK{
-        position: absolute;
-        display: none;
-        align-items: center;
-        text-align: center;
-        justify-content:space-evenly;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 90%; max-width: 700px;
-        height: 90%;
-        max-height: 800px;
-        background-color: #609966;
-        border-radius: 25px;
-    }
-    .Text{
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        font-size: 2em;
-        margin: 2em;
-    }
-    .back{
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        top: 5px;
-        left: 5px;
-        background-position: center;
-        background-size: cover;
-        background-image: url(../../Images/icons8-back-64.png);
-        transition: all 0.5s ease-in-out;
-    }
-    .back:hover{
-        width: 110px;
-        height: 110px;
-        top: 0px;
-        left: 0px;
-    }
-    .SubmitMusic{
-        padding: 1em;
-        }
 }

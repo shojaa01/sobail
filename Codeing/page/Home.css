@@ -3,7 +3,9 @@
   font-family: vazir;
   src: url(iranyekanweblightfanum.woff) format("woff");
 }
-
+body{
+  background-color: #EDF1D6;
+}
 * {
   margin: 0;
   padding: 0;
@@ -115,7 +117,7 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: #9dc08b7a;
+  background-color: #4c5d447a;
   box-shadow: 0 1vh 2vh 0.01vh #9DC08B;
 }
 
@@ -528,7 +530,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: space-evenly;
@@ -538,6 +540,7 @@
   padding: 5%; */
   /* background-color: #f1f1f1; */
   color: rgb(0, 0, 0);
+  margin-top: 50px;
 }
 
 .TitelTextBox {
@@ -569,7 +572,7 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
@@ -671,4 +674,83 @@
   background-size: cover;
   background-position: center;
   background-image: url(./AddHomeWW.png);
+}
+
+/* ---------------------------------------------------------------------------   footer  */
+footer{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 400px;
+  background-color: #40513B;
+  box-shadow: inset 0 0 15px 5px #EDF1D6;
+}
+
+.boxCONT{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100px;
+}
+
+.footerImage{ 
+  position: absolute;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  right: 15px;
+  width: 90px;
+  height: 90px;
+}
+
+.footerTitel{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  width: auto;
+  height: 100px;
+  margin-right: 120px;
+  margin-left: 30px;
+  color: white;
+}
+@media (min-width:900px) {
+  .boxCONT{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100px;
+  }
+  .footerTitel{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    width: auto;
+    height: 100px;
+    margin-right: 120px;
+    margin-left: 30px;
+    color: white;
+    font-size: 1.8em;
+  }
 }
