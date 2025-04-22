@@ -56,7 +56,7 @@ body {
   bottom: -7.5px;
   right: 10px;
   display: none;
-  text-shadow: -0.1em -0.2em 0.5em black ,-0.1em -0.2em 0.5em black ,-0.1em -0.2em 0.5em black ,;
+  text-shadow: -0.1em -0.2em 0.5em rgb(255, 255, 255) ,-0.1em -0.2em 0.5em rgb(255, 255, 255) ,-0.1em -0.2em 0.5em rgb(255, 255, 255) ;
 }
 .card:hover .price{
   display: block;
