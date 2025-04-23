@@ -10,27 +10,20 @@
 
 <body>
     <div class="Container">
-        <div class="Product-name-box">
-            <div class="Product-name">نام محصول</div>
-        </div>
+        <input class="Product-name-box"  type="text"  id="inputName" placeholder="" onkeyup="keyupUp()">
 
-        <div class="Quantity-price-box">
-            <div class="Quantity-price">قیمت و سایز</div>
-        </div>
-        <div class="Quantity-price-box">
-            <div class="Quantity-price">قیمت و سایز</div>
-        </div>
-        <div class="Quantity-price-box">
-            <div class="Quantity-price">قیمت و سایز</div>
-        </div>
+        <input class="Quantity-price-box" type="text"  id="QuantityPrice1" placeholder="" onkeyup="keyupUp()">
 
-        <div class="Product-details-box">
+        <input class="Quantity-price-box" type="text"  id="QuantityPrice2" placeholder="" onkeyup="keyupUp()">
 
-            <div class="Product-details-titel">موارد استفاده شد در محصول</div>
+        <input class="Quantity-price-box" type="text"  id="QuantityPrice3" placeholder="" onkeyup="keyupUp()">
 
-            <div class="Product-details"> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-                - - - - - - - - - - - - - - - - - - - - - - - - - - -</div>
-        </div>
+
+
+
+            <input class="Product-details-box" type="text"  id="ProductDetailsTitel" placeholder="" onkeyup="keyupUp()">
+
+
 
         <div class="Product-image-box">
             <div class="Product-image-titel">
@@ -57,19 +50,21 @@
 
         <div class="Menu-Product-box">
 
-            <div class="Menu-Name-Product-box">قورچ و گاشت</div>
+            <div id="MenuNameProduct" class="Menu-Name-Product-box"></div>
 
             <div class="Menu-Size-And-Price-Box">
-                <div class="Menu-Size-And-Price">122-------------22</div>
-                <div class="Menu-Size-And-Price">155-------------26</div>
+                <div id="MenuSizeAndPrice1" class="Menu-Size-And-Price"></div>
+                <div id="MenuSizeAndPrice2" class="Menu-Size-And-Price"></div>
+                <div id="MenuSizeAndPrice3" class="Menu-Size-And-Price"></div>
             </div>
 
-            <div class="Menu-Used-Items">
-                آیتم های بکار رفته در غذا
+            <div id="MenuUsedItems" class="Menu-Used-Items">
+               
             </div>
 
             <div class="Menu-Product-Photo-box">
-                <div class="Menu-Product-Photo"  style=" background-image: url(../../../../Images/depositphotos_612150398-stock-photo-cartoon-doodle-pizza-seamless-kids.jpg);">
+                <div class="Menu-Product-Photo"
+                    style=" background-image: url(../../../../Images/depositphotos_612150398-stock-photo-cartoon-doodle-pizza-seamless-kids.jpg);">
 
                 </div>
             </div>
@@ -105,5 +100,24 @@
         </div>
     </div>
 </body>
+<script>
+
+    function keyupUp() {
+        var text = document.getElementById('inputName').value;
+        var MenuNameProduct = document.getElementById('MenuNameProduct').textContent = text;
+        
+        var QuantityPrice1 = document.getElementById('QuantityPrice1').value;
+        var MenuSizeAndPrice1 = document.getElementById('MenuSizeAndPrice1').textContent = QuantityPrice1;
+        
+        var QuantityPrice2 = document.getElementById('QuantityPrice2').value;
+        var MenuSizeAndPrice2 = document.getElementById('MenuSizeAndPrice2').textContent = QuantityPrice2;
+        
+        var QuantityPrice3 = document.getElementById('QuantityPrice3').value;
+        var MenuSizeAndPrice3 = document.getElementById('MenuSizeAndPrice3').textContent = QuantityPrice3;
+
+        var ProductDetailsTitel = document.getElementById('ProductDetailsTitel').value;
+        var MenuUsedItems = document.getElementById('MenuUsedItems').textContent = ProductDetailsTitel;
+    }
+</script>
 
 </html>
