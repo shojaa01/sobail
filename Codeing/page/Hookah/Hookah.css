@@ -1,11 +1,19 @@
+@font-face {
+font-family: vazir;
+src: url(../iranyekanweblightfanum.woff) format("woff");
+}
 * {
     margin: 0;
     padding: 0;
+    font-family: vazir;
+    text-decoration: none;
 }
 
 html,
 body {
     height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .Container {
@@ -109,7 +117,7 @@ body {
 
 @keyframes backDIV2 {
     0% {
-        width: 10%;
+        width: 7%;
         height: 240px;
         left: 20%;
         border-radius: 25px;
@@ -141,28 +149,18 @@ body {
     }
 }
 
-.priceSeries,
-.UserNumbers,
-.price {
+
+.mindivHookah {
     position: relative;
+    display: flex;
+    align-items: center;
     display: flex;
     height: 32.5%;
     color: white;
     justify-content: space-between;
-    width: 100%;
+    width: 80%;
 }
 
-p {
-    color: white;
-    margin: 0px 20px 0px 20px;
-    font-size: 1.5em;
-    position: relative;
-    display: none;
-    align-items: center;
-    text-align: center;
-    opacity: 0;
-
-}
 
 .Container :nth-child(odd).box .frontDIV {
     position: relative;
@@ -199,7 +197,7 @@ p {
 
 
 
-.Container :nth-child(odd).box:hover .backDIV div p {
+.Container :nth-child(odd).box:hover .backDIV div {
     display: flex;
     animation-name: EvenOddP;
     animation-duration: 1s;
@@ -300,7 +298,7 @@ p {
 
 @keyframes evenbackDIV2 {
     0% {
-        width: 10%;
+        width: 7%;
         height: 240px;
         right: 20%;
         border-radius: 25px;
@@ -332,15 +330,16 @@ p {
     }
 }
 
-.priceSeries,
-.UserNumbers,
-.price {
+
+.mindivHookah {
     position: relative;
     display: flex;
-    height: 32.5%;
+    height: 25%;
+    align-items: center;
     color: white;
     justify-content: space-between;
-    width: 100%;
+    width: 80%;
+    opacity: 0;
 }
 
 
@@ -360,7 +359,7 @@ p {
     box-shadow: 0 0 15px 5px #B0D9B1;
 }
 
-.Container :nth-child(even).box:hover .backDIV div p {
+.Container :nth-child(even).box:hover .backDIV div {
     display: flex;
     animation-name: EvenOddP;
     animation-duration: 1s;
@@ -368,11 +367,86 @@ p {
     animation-fill-mode: both;
 }
 
+.ContImage45MIN {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(6, 65, 5);
+    border-radius: 50%;
+    border: 0.1em solid rgb(255, 255, 255);
+    z-index: 99999;
+    right: 5px;
+    bottom: 5px;
+}
+
+.URLimageMIN {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    border-radius: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(45MinutesWW.png);
+}
+
+.CONTpopUptext45MIN {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 99998;
+    right: 0px;
+    bottom: 0px;
+    display: none;
+}
+
+.CONTpopUptext45MINtitel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    border: 0.2em solid black;
+}
+
+.CONTpopUptext45MINtitel h3,
+.CONTpopUptext45MINtitel p {
+    position: relative;
+    width: 100%;
+    margin: 30px;
+}
+
+.displayFLEX {
+    display: flex;
+}
+
+
+.CHimagesBack{
+    background-image: url(./backww.png);
+}
 /* ------------------------------------------------------- */
 
 @keyframes EvenOddP {
     0% {
-
         opacity: 0;
     }
 
@@ -390,29 +464,19 @@ p {
 
 @media (max-width:900px) {
 
-    .priceSeries,
-    .UserNumbers,
-    .price {
+
+    .mindivHookah {
         position: relative;
         display: flex;
-        height: 32.5%;
+        height: 25%;
         color: white;
+        align-items: center;
         justify-content: space-between;
-        width: 100%;
+        width: 80%;
         font-size: 1em;
     }
 
-    p {
-        color: rgb(0, 0, 0);
-        margin: 0px 20px 0px 20px;
-        font-size: 1.2em;
-        position: relative;
-        display: none;
-        align-items: center;
-        text-align: center;
-        opacity: 0;
 
-    }
 
     .Titel {
         position: relative;

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="AddHookah.css">
+</head>
+<body>
+    <div class="Container">
+        <label for="inputName">: نام قلیان
+        <input class="Product-name-box" name="inputName" type="text" id="inputName" placeholder="" onkeyup="keyupUp()">
+        </label>
+        <label for="QuantityPrice1">: قیمت قلیان
+        <input class="Quantity-price-box" name="QuantityPrice1" type="text" id="QuantityPrice1" placeholder=""
+            onkeyup="keyupUp()">
+        </label>
+        <label for="QuantityPrice2">: قیمت تعویض سری
+        <input class="Quantity-price-box" name="QuantityPrice2" type="text" id="QuantityPrice2" placeholder=""
+            onkeyup="keyupUp()">
+        </label>
+        <label for="QuantityPrice3">: محدودیت تعداد برای هر قلیان
+        <input class="Quantity-price-box" name="QuantityPrice3" type="text" id="QuantityPrice3" placeholder=""
+            onkeyup="keyupUp()">
+        </label>
+        <label for="QuantityPrice4">: مدت زمان استفاده از هر قلیان
+            <input class="Quantity-price-box" name="QuantityPrice4" type="text" id="QuantityPrice4" placeholder=""
+                onkeyup="keyupUp()">
+            </label>
+
+
+
+
+
+
+                <!-- <div id="MenuSizeAndPrice1" class="Menu-Size-And-Price"></div> -->
+                <!-- <div id="MenuSizeAndPrice2" class="Menu-Size-And-Price"></div> -->
+                <!-- <div id="MenuSizeAndPrice3" class="Menu-Size-And-Price"></div> -->
+                <!-- <div id="MenuSizeAndPrice4" class="Menu-Size-And-Price"></div> -->
+
+                <div class="box">
+                    <div class="backDIV">
+                        <div class="mindivHookah" id="MenuSizeAndPrice1">xxxxx</div>
+                        <div class="mindivHookah" id="MenuSizeAndPrice2">xxxxxxxxxxxxxxxx</div>
+                        <div class="mindivHookah" id="MenuSizeAndPrice3">xxxxxxxxxxxxxxxxxxx</div>
+                        <div class="mindivHookah" id="MenuSizeAndPrice4">xxxxxxxxxxxx</div>
+                    </div>
+                    <div class="frontDIV">
+                        <div class="Titel">قلیان</div>
+                        <div class="Name" id="MenuNameProduct">xxxxxxxx</div>
+                    </div>
+                </div>
+
+
+
+
+        <div class="Product-approval">
+            <div class="Product-approval-BTN">
+                اضافه قلیان به منوو
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    function keyupUp() {
+        var text = document.getElementById('inputName').value;
+        var MenuNameProduct = document.getElementById('MenuNameProduct').textContent = text;
+
+        var QuantityPrice1 = document.getElementById('QuantityPrice1').value;
+        var MenuSizeAndPrice1 = document.getElementById('MenuSizeAndPrice1').textContent = QuantityPrice1;
+
+        var QuantityPrice2 = document.getElementById('QuantityPrice2').value;
+        var MenuSizeAndPrice2 = document.getElementById('MenuSizeAndPrice2').textContent = QuantityPrice2;
+
+        var QuantityPrice3 = document.getElementById('QuantityPrice3').value;
+        var MenuSizeAndPrice3 = document.getElementById('MenuSizeAndPrice3').textContent = QuantityPrice3;
+
+        var QuantityPrice4 = document.getElementById('QuantityPrice4').value;
+        var MenuSizeAndPrice3 = document.getElementById('MenuSizeAndPrice4').textContent = QuantityPrice4;
+
+        var ProductDetailsTitel = document.getElementById('ProductDetailsTitel').value;
+        var MenuUsedItems = document.getElementById('MenuUsedItems').textContent = ProductDetailsTitel;
+    }
+
+    const image_input = document.querySelector("#ProductImageTitel");
+    var uploaded_image = "";
+
+
+
+
+
+
+</script>
+
+</html>
+
+
+
