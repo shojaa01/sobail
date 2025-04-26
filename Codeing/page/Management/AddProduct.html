@@ -10,38 +10,51 @@
 
 <body>
     <div class="Container">
-        <input class="Product-name-box"  type="text"  id="inputName" placeholder="" onkeyup="keyupUp()">
+        <label for="inputName">: نام محصول
+        <input class="Product-name-box" name="inputName" type="text" id="inputName" placeholder="" onkeyup="keyupUp()">
+        </label>
+        <label for="QuantityPrice1">: مدل و قیمت ردیف اول
+        <input class="Quantity-price-box" name="QuantityPrice1" type="text" id="QuantityPrice1" placeholder=""
+            onkeyup="keyupUp()">
+        </label>
+        <label for="QuantityPrice2">: مدل و قیمت ردیف دوم
+        <input class="Quantity-price-box" name="QuantityPrice2" type="text" id="QuantityPrice2" placeholder=""
+            onkeyup="keyupUp()">
+        </label>
+        <label for="QuantityPrice3">: مدل و قیمت ردیف سوم
+        <input class="Quantity-price-box" name="QuantityPrice3" type="text" id="QuantityPrice3" placeholder=""
+            onkeyup="keyupUp()">
+        </label>
 
-        <input class="Quantity-price-box" type="text"  id="QuantityPrice1" placeholder="" onkeyup="keyupUp()">
-
-        <input class="Quantity-price-box" type="text"  id="QuantityPrice2" placeholder="" onkeyup="keyupUp()">
-
-        <input class="Quantity-price-box" type="text"  id="QuantityPrice3" placeholder="" onkeyup="keyupUp()">
 
 
-
-
-            <input class="Product-details-box" type="text"  id="ProductDetailsTitel" placeholder="" onkeyup="keyupUp()">
-
+        <label for="ProductDetailsTitel">: لیست موارد بکار رفته در محصول
+        <input class="Product-details-box" name="ProductDetailsTitel" type="text" id="ProductDetailsTitel"
+            placeholder="" onkeyup="keyupUp()">
+        </label>
 
 
         <div class="Product-image-box">
-            <div class="Product-image-titel">
-                لطفا تصویر مربوط به محصول را آپلود کنید
+            <div class="fileUpload">
+                <input type="file" class="upload" type="file" id="ProductImageTitel"  accept="image/png , image/jpg" />
+                <span>عکس خود را آپلود کنید</span>
             </div>
-            <div class="Product-image"
-                style="background-image: url(../../../../Images/depositphotos_612150398-stock-photo-cartoon-doodle-pizza-seamless-kids.jpg);">
 
-            </div>
         </div>
         <div class="Product-category-box">
             <div class="Product-category-titel">لطفا دسته بندی محصول را مشخص کنید</div>
-            <div class="Product-category">pizza</div>
-            <div class="Product-category">hot sandwich</div>
-            <div class="Product-category">Cold sandwich</div>
-            <div class="Product-category">pasta</div>
-            <div class="Product-category">Suggestion</div>
-            <div class="Product-category">salad</div>
+            <div class="Product-category">پیتزا</div>
+            <div class="Product-category">ساندویج گرم</div>
+            <div class="Product-category">ساندویج سرد</div>
+            <div class="Product-category">پاستا</div>
+            <div class="Product-category">پیش غدا</div>
+            <div class="Product-category">سالاد</div>
+            <div class="Product-category">پیشنهادی</div>
+            <div class="Product-category">نوشیدنی</div>
+            <div class="Product-category">برگر</div>
+            <div class="Product-category">اسنک</div>
+            <div class="Product-category">صبحانه</div>
+            <div class="Product-category">ترکیبی</div>
         </div>
 
 
@@ -58,19 +71,18 @@
                 <div id="MenuSizeAndPrice3" class="Menu-Size-And-Price"></div>
             </div>
 
-            <div id="MenuUsedItems" class="Menu-Used-Items">
-               
+            <div id="MenuUsedItems"  class="Menu-Used-Items">
+
             </div>
 
             <div class="Menu-Product-Photo-box">
-                <div class="Menu-Product-Photo"
-                    style=" background-image: url(../../../../Images/depositphotos_612150398-stock-photo-cartoon-doodle-pizza-seamless-kids.jpg);">
+                <div class="Menu-Product-Photo" id="MenuProductPhoto">
 
                 </div>
             </div>
 
             <div class="Menu-Like-And-Comment-box">
-                <div class="Menu-Comment-box">
+                <!-- <div class="Menu-Comment-box">
                     <div class="Menu-Comment-box-image">
                         <div class="Menu-Comment-image"></div>
                     </div>
@@ -85,7 +97,7 @@
                     <div class="Menu-Number-Like-box">
                         ??
                     </div>
-                </div>
+                </div> -->
             </div>
 
 
@@ -105,19 +117,39 @@
     function keyupUp() {
         var text = document.getElementById('inputName').value;
         var MenuNameProduct = document.getElementById('MenuNameProduct').textContent = text;
-        
+
         var QuantityPrice1 = document.getElementById('QuantityPrice1').value;
         var MenuSizeAndPrice1 = document.getElementById('MenuSizeAndPrice1').textContent = QuantityPrice1;
-        
+
         var QuantityPrice2 = document.getElementById('QuantityPrice2').value;
         var MenuSizeAndPrice2 = document.getElementById('MenuSizeAndPrice2').textContent = QuantityPrice2;
-        
+
         var QuantityPrice3 = document.getElementById('QuantityPrice3').value;
         var MenuSizeAndPrice3 = document.getElementById('MenuSizeAndPrice3').textContent = QuantityPrice3;
 
         var ProductDetailsTitel = document.getElementById('ProductDetailsTitel').value;
         var MenuUsedItems = document.getElementById('MenuUsedItems').textContent = ProductDetailsTitel;
     }
+
+    const image_input = document.querySelector("#ProductImageTitel");
+    var uploaded_image = "";
+
+    image_input.addEventListener("change", function (){
+        const reader = new FileReader();
+        reader.addEventListener("load" , () => {
+            uploaded_image = reader.result;
+            document.querySelector("#MenuProductPhoto").style.backgroundImage = `url(${uploaded_image})`;
+
+        });
+        reader.readAsDataURL(this.files[0]);
+    })
+
+
+
+
 </script>
 
 </html>
+
+
+
