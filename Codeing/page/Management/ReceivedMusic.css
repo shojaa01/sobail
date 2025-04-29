@@ -1,0 +1,180 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #FBFFE4;
+    overflow-x: hidden;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.Continer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.BoxMusic {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 500px;
+    height: 100px;
+    border-radius: 25px;
+    /* border: 5px solid rgb(0, 0, 0); */
+    background-color:#FBFFE4;
+    box-shadow: 0 0 20px 0.5px rgba(0, 0, 0, 0.438);
+    box-shadow: #3D8D7A66 -5px 5px, #3D8D7A4d -10px 10px, #3D8D7A33 -15px 15px, #3D8D7A1a -20px 20px, #3D8D7A0d -25px 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.NameSinger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid black; */
+}
+
+.NameMusic {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid black; */
+}
+
+/* .UrlLinkMusic {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+} */
+
+.UrlLinkMusic P {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+    overflow: scroll;
+}
+
+.ClickBoxMusic {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #FBFFE4;
+    opacity: 0;
+}
+
+.ClickBoxMusic:hover {
+    opacity: 1;
+}
+
+.Remove {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 0px;
+    height: 0px;
+    border: 3px solid #3D8D7A;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    font-size: 0;
+}
+
+/* .confirmation {
+
+} */
+
+.CopyURL {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 0px;
+    height: 0px;
+    border: 3px solid #3D8D7A;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    font-size: 0;
+}
+.Remove,
+.CopyURL{
+    width: 0;height: 0;
+    font-size: 0px;
+    text-decoration: none;
+}
+.ClickBoxMusic:hover .Remove{
+    animation-name: RemoveCopyURL;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-duration: 0.5s;
+    animation-delay: 0.1s;
+    animation-fill-mode: both;
+    animation-iteration-count:inherit;
+}
+.ClickBoxMusic:hover .CopyURL{
+    animation-name: RemoveCopyURL;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-duration: 0.5s;
+    animation-delay: 0.1s;
+    animation-fill-mode: both;
+    animation-iteration-count: inherit;
+}
+@keyframes RemoveCopyURL {
+    0%{    width: 0px;    height: 0px;     font-size: 0em;}
+    100%{   width: 140px; height: 40px;     font-size: 1em;}
+}
+
+@media (min-width:900px) {
+    /* .Continer {} */
+
+    /* .BoxMusic {} */
+
+    /* .NameSinger {} */
+
+    /* .NameMusic {} */
+
+    /* .UrlLinkMusic {} */
+
+    /* .ClickBoxMusic {} */
+
+    /* .Remove {} */
+
+    /* .confirmation {} */
+
+    /* .CopyURL {} */
+}

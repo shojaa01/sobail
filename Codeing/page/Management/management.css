@@ -8,6 +8,8 @@ html,
 body {
     height: 100%;
     background-color: #18230F;
+    overflow-x: hidden;
+    
 }
 @font-face {
     font-family: woff;
