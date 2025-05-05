@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="UpdateHomePage.css">
+</head>
+
+<body>
+    <form action="">
+        <div class="DDF DIVimg">
+            <label for="imageBaner">بنر بالای سایت</label>
+
+            <div class="fileUpload">
+                <input id="imageBaner" class="upload" onkeyup="keyupUp()" name="imageBaner" type="file" accept="image/png , image/jpg">
+                <span>عکس خود را آپلود کنید</span>
+            </div>
+
+        </div>
+        <div class="DDF DIVtextANDtitel">
+            <label for="">متن صحفه اصلی</label>
+            <input id="TextTitel" onkeyup="keyupUp()" name="" type="text">
+        </div>
+
+        <div class="DDF inputStyle">
+            <label for="footerTitelUplod0"></label>
+            <input id="footerTitelUplod0" onkeyup="keyupUp()" name="footerTitelUplod0" type="text">
+            <label for=""></label>
+            <div class="fileUpload">
+                <input class="upload"  id="imageFooterN0" onkeyup="keyupUp()" name="" type="file" accept="image/png , image/jpg">
+                <span>عکس خود را آپلود کنید</span>
+            </div>
+        </div>
+        <div class="DDF inputStyle">
+            <label for="footerTitelUplod1"></label>
+            <input id="footerTitelUplod1" onkeyup="keyupUp()" name="footerTitelUplod1" type="text">
+            <label for=""></label>
+            <div class="fileUpload">
+                <input class="upload" id="imageFooterN1" onkeyup="keyupUp()" name="" type="file" accept="image/png , image/jpg">
+                <span>عکس خود را آپلود کنید</span>
+            </div>
+        </div>
+        <div class="DDF inputStyle">
+            <label  for="footerTitelUplod2"></label>
+            <input id="footerTitelUplod2" onkeyup="keyupUp()" name="footerTitelUplod2" type="text">
+            <label for=""></label>
+            <div class="fileUpload">
+                <input class="upload" id="imageFooterN2" onkeyup="keyupUp()" name="" type="file" accept="image/png , image/jpg">
+                <span>عکس خود را آپلود کنید</span>
+            </div>
+        </div>
+        <div class="DDF inputStyle">
+            <label for="footerTitelUplod3"></label>
+            <input  id="footerTitelUplod3" onkeyup="keyupUp()" name="footerTitelUplod3" type="text">
+            <label for=""></label>
+            <div class="fileUpload">
+                <input class="upload" id="imageFooterN3" onkeyup="keyupUp()" name="" type="file" accept="image/png , image/jpg">
+                <span>عکس خود را آپلود کنید</span>
+            </div>
+        </div>
+
+        <div class="DDF DIVbtnSUBMIT">
+            <input name="" type="submit" value="تایید">
+        </div>
+    </form>
+    <div class="continer">
+        <div class="ShowImage" id="ShowImage">
+
+        </div>
+        <div class="ShowText" id="ShowText">
+
+        </div>
+        <div class="ShowFooter">
+
+            <div class="boxCONT">
+                <div class="footerImage" id="footerImageShowN0">
+
+                </div>
+                <div class="footerTitel" id="footerTitel0">
+
+                </div>
+            </div>
+            <!-- ---------------------------------------------------- -->
+            <div class="boxCONT">
+                <div class="footerImage" id="footerImageShowN1">
+
+                </div>
+                <div class="footerTitel" id="footerTitel1">
+
+                </div>
+            </div>
+            <!-- ---------------------------------------------------- -->
+            <div class="boxCONT">
+                <div class="footerImage" id="footerImageShowN2">
+
+                </div>
+                <div class="footerTitel" id="footerTitel2">
+
+                </div>
+            </div>
+            <!-- ---------------------------------------------------- -->
+            <div class="boxCONT">
+                <div class="footerImage" id="footerImageShowN3">
+
+                </div>
+                <div class="footerTitel" id="footerTitel3">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    function keyupUp() {
+        var text = document.getElementById('TextTitel').value;
+        var ShowText = document.getElementById('ShowText').textContent = text;
+
+        var footerTitelUplod0 = document.getElementById('footerTitelUplod0').value;
+        var footerTitel0 = document.getElementById('footerTitel0').textContent = footerTitelUplod0;
+
+        var footerTitelUplod1 = document.getElementById('footerTitelUplod1').value;
+        var footerTitel1 = document.getElementById('footerTitel1').textContent = footerTitelUplod1;
+
+        var footerTitelUplod2 = document.getElementById('footerTitelUplod2').value;
+        var footerTitel2 = document.getElementById('footerTitel2').textContent = footerTitelUplod2;
+
+        var footerTitelUplod3 = document.getElementById('footerTitelUplod3').value;
+        var footerTitel3 = document.getElementById('footerTitel3').textContent = footerTitelUplod3;
+    }
+
+    const image_input = document.querySelector("#imageBaner");
+    var uploaded_image = "";
+
+    image_input.addEventListener("change", function () {
+        const reader = new FileReader();
+        reader.addEventListener("load", () => {
+            uploaded_image = reader.result;
+            document.querySelector("#ShowImage").style.backgroundImage = `url(${uploaded_image})`;
+
+        });
+        reader.readAsDataURL(this.files[0]);
+    })
+    const imageFooterN0 = document.querySelector("#imageFooterN0");
+    var uploaded_image = "";
+
+    imageFooterN0.addEventListener("change", function () {
+        const reader = new FileReader();
+        reader.addEventListener("load", () => {
+            uploaded_image = reader.result;
+            document.querySelector("#footerImageShowN0").style.backgroundImage = `url(${uploaded_image})`;
+
+        });
+        reader.readAsDataURL(this.files[0]);
+    })
+    const imageFooterN1 = document.querySelector("#imageFooterN1");
+    var uploaded_image = "";
+
+    imageFooterN1.addEventListener("change", function () {
+        const reader = new FileReader();
+        reader.addEventListener("load", () => {
+            uploaded_image = reader.result;
+            document.querySelector("#footerImageShowN1").style.backgroundImage = `url(${uploaded_image})`;
+
+        });
+        reader.readAsDataURL(this.files[0]);
+    })
+    const imageFooterN2 = document.querySelector("#imageFooterN2");
+    var uploaded_image = "";
+
+    imageFooterN2.addEventListener("change", function () {
+        const reader = new FileReader();
+        reader.addEventListener("load", () => {
+            uploaded_image = reader.result;
+            document.querySelector("#footerImageShowN2").style.backgroundImage = `url(${uploaded_image})`;
+
+        });
+        reader.readAsDataURL(this.files[0]);
+    })
+    const imageFooterN3 = document.querySelector("#imageFooterN3");
+    var uploaded_image = "";
+
+    imageFooterN3.addEventListener("change", function () {
+        const reader = new FileReader();
+        reader.addEventListener("load", () => {
+            uploaded_image = reader.result;
+            document.querySelector("#footerImageShowN3").style.backgroundImage = `url(${uploaded_image})`;
+
+        });
+        reader.readAsDataURL(this.files[0]);
+    })
+</script>
+
+</html>

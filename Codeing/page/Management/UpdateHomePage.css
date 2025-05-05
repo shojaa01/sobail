@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+}
+
+.DIVimg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  height: 100px;
+  max-width: 600px;
+  border: 0.2em solid black;
+  margin: 1em;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+}
+
+.DIVtextANDtitel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  border: 0.2em solid black;
+  margin: 1em;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  padding: 0.5em;
+}
+
+.DIVtextANDtitel input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  height: 100px;
+  border-radius: 25px;
+}
+
+.inputStyle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  height: 100px;
+  max-width: 600px;
+  border: 0.2em solid black;
+  margin: 1em;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+}
+.inputStyle input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  height: 90%;
+  border-radius: 25px;
+}
+.DIVbtnSUBMIT {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  height: auto;
+  margin: 1em;
+}.DIVbtnSUBMIT input{
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border: 0.1em solid black;
+  box-shadow: 0 0 0.5em 0.1em black;
+}
+
+/* -----------------------------------------Show Update */
+.continer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.ShowImage {
+  position: relative;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  background-color: #000000;
+  margin-top: 2em;
+}
+
+.ShowText {
+  width: 400px;
+  height:auto;
+  font-size: 1.2em;
+  margin: 1em;
+}
+
+.ShowFooter {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 400px;
+  background-color: #ffffff;
+}
+
+.boxCONT {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100px;
+}
+
+.footerImage {
+  position: absolute;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  right: 15px;
+  width: 80px;
+  height: 80px;
+}
+
+.footerTitel {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  width: auto;
+  height: 100px;
+  margin-right: 120px;
+  margin-left: 30px;
+  color: rgb(0, 0, 0);
+}
+
+@media (min-width:900px) {
+  .boxCONT {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100px;
+  }
+
+  .footerTitel {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    width: auto;
+    height: 100px;
+    margin-right: 120px;
+    margin-left: 30px;
+    color: white;
+    font-size: 1.8em;
+  }
+}
+
+
+
+@media (max-width:900px) {
+
+  .ShowImage {
+    position: relative;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* --------------------------------- */
+
+.fileUpload {
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  /* box-shadow: 0 0 15px 5px #7f7f7f, inset 0 0 55px 5px #a4a4a4; */
+  border: 0.2em solid #000000;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 1.25em auto;
+  /*20px/16px 0*/
+  overflow: hidden;
+  padding: 0.875em;
+  /*14px/16px*/
+  position: relative;
+  text-align: center;
+  width: 30%;
+  cursor: pointer;
+}
+
+.fileUpload:hover,
+.fileUpload:active,
+.fileUpload:focus {
+  background: #3a3a3a;
+  cursor: pointer;
+}
+
+.fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  width: 148px;
+  height: 46px;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  position: fixed;
+  right: 100%;
+  bottom: 100%;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+@media (min-width:900px) {
+  .fileUpload {
+    background-color: #000000;
+    /* box-shadow: 0 0 15px 5px #9DC08B, inset 0 0 55px 5px #9DC08B; */
+    border: 0.2em solid #ffffff;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1.25em auto;
+    overflow: hidden;
+    padding: 0.875em;
+    position: relative;
+    text-align: center;
+    width: 30%;
+    cursor: pointer;
+  }
+
+  .fileUpload:hover,
+  .fileUpload:active,
+  .fileUpload:focus {
+    background: #ffffff;
+    cursor: pointer;
+  }
+
+  .fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: 148px;
+    height: 46px;
+    cursor: pointer;
+  }
+
+  input[type="file"] {
+    position: fixed;
+    right: 100%;
+    bottom: 100%;
+  }
+
+  .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+}
