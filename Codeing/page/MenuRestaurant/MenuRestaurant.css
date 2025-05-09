@@ -4,33 +4,59 @@
     transition: all 0.3s ease-in-out;
     text-decoration: none;
 }
-
+::-webkit-scrollbar {
+    /*. کل اسکرول */
+    width: 0px;
+    height: 0px;
+    /* عرض نوار اسکرول */
+  }
+  
+  ::-webkit-scrollbar-track {
+    /*. پس زمینه نوار اسکرول */
+    background: #f1f1f1;
+    /* رنگ پس‌زمینه نوار اسکرول */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    /*.خود نوار اسکرول */
+    background: #888;
+    /* رنگ قسمت قابل حرکت نوار اسکرول */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #C1C1C1;
+    /* هاور قسمت حرکت نوار اسکرول */
+  }
+  
 html {
     scroll-behavior: smooth;
 }
 
 .header {
     position: relative;
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: auto;
-    /* background-color: black; */
+    justify-content: center;
+    background-color: #EDF1D6;
 }
 
 .Menu-Product-ul {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: auto;
-    background-color: #9DC08B;
+    justify-content: center;
+    width: 90%; height: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: #EDF1D6;
+    border: 0.2em solid black;
+    border-radius: 25px;
+    margin: 1px 5% 1px 5%;
+    
 }
 
 .Menu-Product-ul-li {
@@ -42,8 +68,9 @@ html {
     justify-content: space-evenly;
     width: auto;
     height: auto;
-    margin: 0.3em 0.3em 0.3em 0.3em;
-    padding: 0.3em;
+    border: 0.2em solid black;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    padding: 0.5em;
     background-color: #EDF1D6;
     border-radius: 25px;
 }
@@ -66,7 +93,7 @@ html {
     height: auto;
     background:  fixed center no-repeat cover;
     background-color: #EDF1D6;
-    box-shadow: inset 0 0 20px 15px #9DC08B;
+    /* box-shadow: inset 0 0 20px 15px #9DC08B; */
 }
 
 .Menu-Product-category {
@@ -413,29 +440,31 @@ html {
     html {
         scroll-behavior: smooth;
     }
-    
     .header {
         position: relative;
-        display: flex;
         flex-wrap: wrap;
         align-items: center;
         text-align: center;
-        justify-content: space-evenly;
-        width: 100%;
-        height: auto;
-        /* background-color: black; */
+        justify-content: center;
+        background-color: #EDF1D6;
     }
     
     .Menu-Product-ul {
         position: relative;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         align-items: center;
         text-align: center;
-        justify-content: space-evenly;
-        width: 100%;
-        height: auto;
+        justify-content: center;
+        width: 90%; height: 100px;
+        overflow-x: scroll;
+        overflow-y: hidden;
         background-color: #EDF1D6;
+        border: 0.2em solid black;
+        border-radius: 25px;
+        margin: 1px 5% 1px 5%;
+        
     }
     
     .Menu-Product-ul-li {
@@ -447,9 +476,11 @@ html {
         justify-content: space-evenly;
         width: auto;
         height: auto;
-        margin: 0.3em 0.3em 0.3em 0.3em;
-        padding: 0.3em;
-        /* background-color: rgb(255, 255, 255); */
+        border: 0.2em solid black;
+        margin: 0.5em 0.5em 0.5em 0.5em;
+        padding: 0.5em;
+        background-color: #EDF1D6;
+        border-radius: 25px;
     }
     
     .Menu-Product-ul-li-a {
