@@ -4,21 +4,13 @@
     text-decoration: none;
 }
 
-html,
-body {
-    height: 100%;
-    background-color: #18230F;
-    overflow-x: hidden;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    
-}
+
+
 @font-face {
     font-family: woff;
     src: url(iranyekanweblightfanum.woff) format("woff");
-  }
+}
+
 .continer {
     position: relative;
     display: flex;
@@ -28,9 +20,17 @@ body {
     flex-wrap: wrap;
 }
 
-@media (max-width:900px){
+@media (max-width:900px) {
 
-    .continer :nth-child(even).VC{
+    html,
+    body {
+        height: 100%;
+        background-color: #f6ffef;
+        overflow-x: hidden;
+
+    }
+
+    .continer :nth-child(even).VC {
         position: relative;
         display: flex;
         align-items: center;
@@ -45,9 +45,10 @@ body {
         left: 15%;
         border-top-left-radius: 25px;
         border-bottom-left-radius: 25px;
-        margin: 25px 0px 25px  0px; 
+        margin: 25px 0px 25px 0px;
     }
-    .continer :nth-child(odd).VC{
+
+    .continer :nth-child(odd).VC {
         position: relative;
         display: flex;
         align-items: center;
@@ -62,10 +63,10 @@ body {
         height: 100px;
         border-top-right-radius: 25px;
         border-bottom-right-radius: 25px;
-        margin: 25px 0px 25px  0px; 
+        margin: 25px 0px 25px 0px;
     }
 
-    .VC a{
+    .VC a {
         color: rgb(255, 255, 255);
         font-size: 1.3em;
         font-weight: 900;
@@ -73,60 +74,74 @@ body {
     }
 
     /* .VC1 {} */
-/*  */
+    /*  */
     /* .VC2 {} */
-/*  */
+    /*  */
     /* .VC3 {} */
-/*  */
+    /*  */
     /* .VC4 {} */
-/*  */
+    /*  */
     /* .VC5 {} */
-/*  */
+    /*  */
     /* .VC6 {} */
-/*  */
+    /*  */
     /* .VC7 {} */
-/*  */
+    /*  */
     /* .VC8 {} */
-/*  */
+    /*  */
     /* .VC9 {} */
 
 }
 
 @media (min-width:900px) {
-    .continer :nth-child(even).VC{
-        position: relative;
+
+    html,
+    body {
+        height: 100%;
+        background-color: #18230F;
+        overflow-x: hidden;
         display: flex;
         align-items: center;
         text-align: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        background-color: #27391C;
-        border: 0.2em solid #255F38;
-        box-shadow: 0 0 15px 5px #255F38;
-        width: auto;
-        padding:0px 100px 0px 100px;
-        height: 100px;
-        border-radius: 25px;
-        margin: 25px 
-    }
-    .continer :nth-child(odd).VC{
-        position: relative;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        background-color: #27391C;
-        border: 0.2em solid #255F38;
-        box-shadow: 0 0 15px 5px #255F38;
-        width: auto;
-        padding:0px 100px 0px 100px;
-        height: 100px;
-        border-radius: 25px;
-        margin: 25px; 
+        justify-content: center;
+
     }
 
-    .VC a{
+    .continer :nth-child(even).VC {
+        position: relative;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-color: #27391C;
+        border: 0.2em solid #255F38;
+        box-shadow: 0 0 15px 5px #255F38;
+        width: auto;
+        padding: 0px 100px 0px 100px;
+        height: 100px;
+        border-radius: 25px;
+        margin: 25px
+    }
+
+    .continer :nth-child(odd).VC {
+        position: relative;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-color: #27391C;
+        border: 0.2em solid #255F38;
+        box-shadow: 0 0 15px 5px #255F38;
+        width: auto;
+        padding: 0px 100px 0px 100px;
+        height: 100px;
+        border-radius: 25px;
+        margin: 25px;
+    }
+
+    .VC a {
         color: rgb(255, 255, 255);
         font-size: 1.3em;
         font-weight: 900;
